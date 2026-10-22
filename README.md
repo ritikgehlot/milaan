@@ -716,5 +716,3 @@ matches, amount differences, idempotency and source-record immutability.
 | `EVALUATION.md` | Measured evaluation results, baseline and limitations |
 | `DEMO.md` | Repeatable judge demo script |
 | `.env.example` | Documented environment variables |
-#   m i l a a n  
- 
