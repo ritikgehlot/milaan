@@ -1,0 +1,101 @@
+{
+  "summary": {
+    "images": 3,
+    "bills": 3,
+    "errors": 0,
+    "is_bill_accuracy": 1.0,
+    "field_accuracy_excl_smudged": {
+      "supplier_gstin": 1.0,
+      "invoice_number": 1.0,
+      "invoice_date": 1.0,
+      "total_gst": 1.0,
+      "taxable_value": 1.0
+    },
+    "unsafe_pass_bills": 0,
+    "unsafe_pass_detail": [],
+    "auto_accepted_bills": 0,
+    "auto_accepted_fully_correct": 0,
+    "bills_with_a_reask": 3,
+    "false_flags_total": 0,
+    "by_degradation": {
+      "clean": {
+        "n": 3,
+        "all_fields_correct": 3,
+        "reasked": 3,
+        "unsafe_pass": 0
+      }
+    },
+    "avg_seconds_per_bill": 14.64,
+    "avg_tokens_in": 2782,
+    "avg_tokens_out": 2135,
+    "model": "gemini-3.5-flash",
+    "double_read": true,
+    "note": "Synthetic rendered bills with simulated photo damage; not real photographs.",
+    "cost_usd_per_bill": 0.006172
+  },
+  "per_image": [
+    {
+      "file": "arith_error_00.jpg",
+      "kind": "clean",
+      "seconds": 16.35,
+      "tokens_in": 2743,
+      "tokens_out": 2448,
+      "status": "NEEDS_INPUT",
+      "uncertain": [
+        "total_gst"
+      ],
+      "is_bill_correct": true,
+      "correct": {
+        "supplier_gstin": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "total_gst": true,
+        "taxable_value": true
+      },
+      "unsafe_pass": [],
+      "false_flags": []
+    },
+    {
+      "file": "arith_error_01.jpg",
+      "kind": "clean",
+      "seconds": 13.79,
+      "tokens_in": 2801,
+      "tokens_out": 2142,
+      "status": "NEEDS_INPUT",
+      "uncertain": [
+        "total_gst"
+      ],
+      "is_bill_correct": true,
+      "correct": {
+        "supplier_gstin": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "total_gst": true,
+        "taxable_value": true
+      },
+      "unsafe_pass": [],
+      "false_flags": []
+    },
+    {
+      "file": "arith_error_02.jpg",
+      "kind": "clean",
+      "seconds": 13.79,
+      "tokens_in": 2801,
+      "tokens_out": 1814,
+      "status": "NEEDS_INPUT",
+      "uncertain": [
+        "total_gst"
+      ],
+      "is_bill_correct": true,
+      "correct": {
+        "supplier_gstin": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "total_gst": true,
+        "taxable_value": true
+      },
+      "unsafe_pass": [],
+      "false_flags": []
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "truth": {
+    "is_bill": true,
+    "supplier_name": "Chopasni Pipe House",
+    "supplier_gstin": "08AHGCJ3768T1Z5",
+    "printed_gstin": "08AHGCJ3768T1Z5",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "INV-2731",
+    "invoice_date": "2026-09-12",
+    "taxable_value": "69994.50",
+    "cgst": "6299.50",
+    "sgst": "6299.51",
+    "igst": "0.00",
+    "total_gst": "12599.01",
+    "invoice_total": "82593.51",
+    "gst_rate": 18,
+    "description": "TMT Bar Fe500 (kg), Tile Adhesive 20kg"
+  },
+  "fixture": {
+    "is_bill": true,
+    "supplier_name": "Chopasni Pipe House",
+    "supplier_gstin": "08AHGCJ3768T1Z5",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "INV-2731",
+    "invoice_date": "2026-09-12",
+    "taxable_value": "69994.50",
+    "cgst": "6288.05",
+    "sgst": "6288.06",
+    "igst": "0.00",
+    "total_gst": "12576.11",
+    "invoice_total": "82570.61",
+    "gst_rate": 18,
+    "description": "TMT Bar Fe500 (kg), Tile Adhesive 20kg",
+    "confidence": {
+      "supplier_gstin": 0.97,
+      "invoice_number": 0.97,
+      "invoice_date": 0.97,
+      "total_gst": 0.97,
+      "taxable_value": 0.97,
+      "invoice_total": 0.97
+    },
+    "boxes": {
+      "supplier_gstin": [
+        160,
+        362,
+        173,
+        635
+      ],
+      "invoice_number": [
+        208,
+        88,
+        221,
+        313
+      ],
+      "invoice_date": [
+        208,
+        741,
+        220,
+        909
+      ],
+      "total_gst": [
+        506,
+        792,
+        518,
+        910
+      ],
+      "invoice_total": [
+        532,
+        792,
+        543,
+        910
+      ]
+    }
+  },
+  "degradation": "clean",
+  "printed_tax_override": 1257611
+}

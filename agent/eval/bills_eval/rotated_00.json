@@ -1,0 +1,77 @@
+{
+  "truth": {
+    "is_bill": true,
+    "supplier_name": "Kailash Electricals",
+    "supplier_gstin": "08EXWFT9020M1ZX",
+    "printed_gstin": "08EXWFT9020M1ZX",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "KA/852",
+    "invoice_date": "2026-08-09",
+    "taxable_value": "45690.00",
+    "cgst": "2741.40",
+    "sgst": "2741.40",
+    "igst": "0.00",
+    "total_gst": "5482.80",
+    "invoice_total": "51172.80",
+    "gst_rate": 12,
+    "description": "Tile Adhesive 20kg, Mortise Lock Set"
+  },
+  "fixture": {
+    "is_bill": true,
+    "supplier_name": "Kailash Electricals",
+    "supplier_gstin": "08EXWFT9020M1ZX",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "KA/852",
+    "invoice_date": "2026-08-09",
+    "taxable_value": "45690.00",
+    "cgst": "2741.40",
+    "sgst": "2741.40",
+    "igst": "0.00",
+    "total_gst": "5482.80",
+    "invoice_total": "51172.80",
+    "gst_rate": 12,
+    "description": "Tile Adhesive 20kg, Mortise Lock Set",
+    "confidence": {
+      "supplier_gstin": 0.97,
+      "invoice_number": 0.97,
+      "invoice_date": 0.97,
+      "total_gst": 0.97,
+      "taxable_value": 0.97,
+      "invoice_total": 0.97
+    },
+    "boxes": {
+      "supplier_gstin": [
+        177,
+        331,
+        214,
+        568
+      ],
+      "invoice_number": [
+        253,
+        102,
+        284,
+        278
+      ],
+      "invoice_date": [
+        195,
+        664,
+        221,
+        811
+      ],
+      "total_gst": [
+        467,
+        763,
+        488,
+        856
+      ],
+      "invoice_total": [
+        491,
+        757,
+        512,
+        859
+      ]
+    }
+  },
+  "degradation": "rotated",
+  "printed_tax_override": null
+}

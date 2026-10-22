@@ -1,0 +1,77 @@
+{
+  "truth": {
+    "is_bill": true,
+    "supplier_name": "Marwar Traders",
+    "supplier_gstin": "08MAAPS6370Y1Z7",
+    "printed_gstin": "08MAAPS6370Y1Z7",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "MAR/26-27/5686",
+    "invoice_date": "2026-09-15",
+    "taxable_value": "5310.00",
+    "cgst": "477.90",
+    "sgst": "477.90",
+    "igst": "0.00",
+    "total_gst": "955.80",
+    "invoice_total": "6265.80",
+    "gst_rate": 18,
+    "description": "SS Hinges 4in"
+  },
+  "fixture": {
+    "is_bill": true,
+    "supplier_name": "Marwar Traders",
+    "supplier_gstin": "08MAAPS6370Y1Z7",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "MAR/26-27/5686",
+    "invoice_date": "2026-09-15",
+    "taxable_value": "5310.00",
+    "cgst": "477.90",
+    "sgst": "477.90",
+    "igst": "0.00",
+    "total_gst": "955.80",
+    "invoice_total": "6265.80",
+    "gst_rate": 18,
+    "description": "SS Hinges 4in",
+    "confidence": {
+      "supplier_gstin": 0.97,
+      "invoice_number": 0.97,
+      "invoice_date": 0.97,
+      "total_gst": 0.97,
+      "taxable_value": 0.97,
+      "invoice_total": 0.97
+    },
+    "boxes": {
+      "supplier_gstin": [
+        164,
+        380,
+        182,
+        644
+      ],
+      "invoice_number": [
+        205,
+        112,
+        224,
+        406
+      ],
+      "invoice_date": [
+        220,
+        744,
+        235,
+        907
+      ],
+      "total_gst": [
+        467,
+        814,
+        479,
+        898
+      ],
+      "invoice_total": [
+        492,
+        795,
+        505,
+        897
+      ]
+    }
+  },
+  "degradation": "blur",
+  "printed_tax_override": null
+}

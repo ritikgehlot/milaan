@@ -1,0 +1,77 @@
+{
+  "truth": {
+    "is_bill": true,
+    "supplier_name": "Suryanagri Hardware",
+    "supplier_gstin": "08UTHFY8470V1Z5",
+    "printed_gstin": "08UTHFY8470V1Z5",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "SU/357",
+    "invoice_date": "2026-09-03",
+    "taxable_value": "145510.00",
+    "cgst": "13095.90",
+    "sgst": "13095.90",
+    "igst": "0.00",
+    "total_gst": "26191.80",
+    "invoice_total": "171701.80",
+    "gst_rate": 18,
+    "description": "FR Wire 1.5sqmm 90m, GI Wire 12g (kg)"
+  },
+  "fixture": {
+    "is_bill": true,
+    "supplier_name": "Suryanagri Hardware",
+    "supplier_gstin": "08UTHFY8470V1Z5",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "SU/357",
+    "invoice_date": "2026-09-03",
+    "taxable_value": "145510.00",
+    "cgst": "13095.90",
+    "sgst": "13095.90",
+    "igst": "0.00",
+    "total_gst": "26191.80",
+    "invoice_total": "171701.80",
+    "gst_rate": 18,
+    "description": "FR Wire 1.5sqmm 90m, GI Wire 12g (kg)",
+    "confidence": {
+      "supplier_gstin": 0.97,
+      "invoice_number": 0.97,
+      "invoice_date": 0.97,
+      "total_gst": 0.97,
+      "taxable_value": 0.97,
+      "invoice_total": 0.97
+    },
+    "boxes": {
+      "supplier_gstin": [
+        120,
+        366,
+        129,
+        659
+      ],
+      "invoice_number": [
+        149,
+        147,
+        158,
+        369
+      ],
+      "invoice_date": [
+        166,
+        147,
+        175,
+        330
+      ],
+      "total_gst": [
+        351,
+        748,
+        359,
+        871
+      ],
+      "invoice_total": [
+        367,
+        734,
+        376,
+        869
+      ]
+    }
+  },
+  "degradation": "crumpled",
+  "printed_tax_override": null
+}

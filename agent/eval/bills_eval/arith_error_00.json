@@ -1,0 +1,77 @@
+{
+  "truth": {
+    "is_bill": true,
+    "supplier_name": "Ratanada Glass & Ply",
+    "supplier_gstin": "08HTLFB9011H1Z7",
+    "printed_gstin": "08HTLFB9011H1Z7",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "INV-8678",
+    "invoice_date": "2026-08-15",
+    "taxable_value": "63856.00",
+    "cgst": "5747.04",
+    "sgst": "5747.04",
+    "igst": "0.00",
+    "total_gst": "11494.08",
+    "invoice_total": "75350.08",
+    "gst_rate": 18,
+    "description": "TMT Bar Fe500 (kg), Wall Putty 40kg"
+  },
+  "fixture": {
+    "is_bill": true,
+    "supplier_name": "Ratanada Glass & Ply",
+    "supplier_gstin": "08HTLFB9011H1Z7",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "INV-8678",
+    "invoice_date": "2026-08-15",
+    "taxable_value": "63856.00",
+    "cgst": "5769.31",
+    "sgst": "5769.32",
+    "igst": "0.00",
+    "total_gst": "11538.63",
+    "invoice_total": "75394.63",
+    "gst_rate": 18,
+    "description": "TMT Bar Fe500 (kg), Wall Putty 40kg",
+    "confidence": {
+      "supplier_gstin": 0.97,
+      "invoice_number": 0.97,
+      "invoice_date": 0.97,
+      "total_gst": 0.97,
+      "taxable_value": 0.97,
+      "invoice_total": 0.97
+    },
+    "boxes": {
+      "supplier_gstin": [
+        164,
+        378,
+        181,
+        643
+      ],
+      "invoice_number": [
+        205,
+        110,
+        221,
+        328
+      ],
+      "invoice_date": [
+        219,
+        744,
+        233,
+        907
+      ],
+      "total_gst": [
+        512,
+        783,
+        526,
+        897
+      ],
+      "invoice_total": [
+        538,
+        782,
+        551,
+        897
+      ]
+    }
+  },
+  "degradation": "clean",
+  "printed_tax_override": 1153863
+}

@@ -1,0 +1,77 @@
+{
+  "truth": {
+    "is_bill": true,
+    "supplier_name": "Mehrangarh Building Supply",
+    "supplier_gstin": "08VBPCX9338Y1ZX",
+    "printed_gstin": "08VBPCX9338Y1ZX",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "ME/525",
+    "invoice_date": "2026-09-16",
+    "taxable_value": "42760.00",
+    "cgst": "0.00",
+    "sgst": "0.00",
+    "igst": "11972.80",
+    "total_gst": "11972.80",
+    "invoice_total": "54732.80",
+    "gst_rate": 28,
+    "description": "Mortise Lock Set, PVC Ball Valve 1in"
+  },
+  "fixture": {
+    "is_bill": true,
+    "supplier_name": "Mehrangarh Building Supply",
+    "supplier_gstin": "08VBPCX9338Y1ZX",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "ME/525",
+    "invoice_date": "2026-09-16",
+    "taxable_value": "42760.00",
+    "cgst": "0.00",
+    "sgst": "0.00",
+    "igst": "11972.80",
+    "total_gst": "11972.80",
+    "invoice_total": "54732.80",
+    "gst_rate": 28,
+    "description": "Mortise Lock Set, PVC Ball Valve 1in",
+    "confidence": {
+      "supplier_gstin": 0.97,
+      "invoice_number": 0.97,
+      "invoice_date": 0.97,
+      "total_gst": 0.97,
+      "taxable_value": 0.97,
+      "invoice_total": 0.97
+    },
+    "boxes": {
+      "supplier_gstin": [
+        162,
+        371,
+        177,
+        640
+      ],
+      "invoice_number": [
+        206,
+        99,
+        221,
+        302
+      ],
+      "invoice_date": [
+        214,
+        743,
+        226,
+        909
+      ],
+      "total_gst": [
+        461,
+        789,
+        473,
+        905
+      ],
+      "invoice_total": [
+        486,
+        789,
+        499,
+        905
+      ]
+    }
+  },
+  "degradation": "smudge_gstin",
+  "printed_tax_override": null
+}

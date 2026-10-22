@@ -1,0 +1,77 @@
+{
+  "truth": {
+    "is_bill": true,
+    "supplier_name": "Umaid Cement Depot",
+    "supplier_gstin": "08LWSFS6358J1ZS",
+    "printed_gstin": "08LWSFS6358J1ZS",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "INV-6591",
+    "invoice_date": "2026-07-21",
+    "taxable_value": "60520.00",
+    "cgst": "0.00",
+    "sgst": "0.00",
+    "igst": "7262.40",
+    "total_gst": "7262.40",
+    "invoice_total": "67782.40",
+    "gst_rate": 12,
+    "description": "Mortise Lock Set"
+  },
+  "fixture": {
+    "is_bill": true,
+    "supplier_name": "Umaid Cement Depot",
+    "supplier_gstin": "08LWSFS6358J1ZS",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "INV-6591",
+    "invoice_date": "2026-07-21",
+    "taxable_value": "60520.00",
+    "cgst": "0.00",
+    "sgst": "0.00",
+    "igst": "7262.40",
+    "total_gst": "7262.40",
+    "invoice_total": "67782.40",
+    "gst_rate": 12,
+    "description": "Mortise Lock Set",
+    "confidence": {
+      "supplier_gstin": 0.97,
+      "invoice_number": 0.97,
+      "invoice_date": 0.97,
+      "total_gst": 0.97,
+      "taxable_value": 0.97,
+      "invoice_total": 0.97
+    },
+    "boxes": {
+      "supplier_gstin": [
+        161,
+        363,
+        173,
+        637
+      ],
+      "invoice_number": [
+        208,
+        88,
+        220,
+        313
+      ],
+      "invoice_date": [
+        209,
+        742,
+        220,
+        911
+      ],
+      "total_gst": [
+        434,
+        805,
+        446,
+        911
+      ],
+      "invoice_total": [
+        459,
+        793,
+        471,
+        911
+      ]
+    }
+  },
+  "degradation": "smudge_gstin",
+  "printed_tax_override": null
+}

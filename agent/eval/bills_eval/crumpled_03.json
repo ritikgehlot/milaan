@@ -1,0 +1,77 @@
+{
+  "truth": {
+    "is_bill": true,
+    "supplier_name": "Ratanada Glass & Ply",
+    "supplier_gstin": "08LDLFR5319E1ZN",
+    "printed_gstin": "08LDLFR5319E1ZN",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "INV-3090",
+    "invoice_date": "2026-09-08",
+    "taxable_value": "52285.00",
+    "cgst": "4705.65",
+    "sgst": "4705.65",
+    "igst": "0.00",
+    "total_gst": "9411.30",
+    "invoice_total": "61696.30",
+    "gst_rate": 18,
+    "description": "PVC Ball Valve 1in, CPVC Pipe 1in 3m"
+  },
+  "fixture": {
+    "is_bill": true,
+    "supplier_name": "Ratanada Glass & Ply",
+    "supplier_gstin": "08LDLFR5319E1ZN",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "INV-3090",
+    "invoice_date": "2026-09-08",
+    "taxable_value": "52285.00",
+    "cgst": "4705.65",
+    "sgst": "4705.65",
+    "igst": "0.00",
+    "total_gst": "9411.30",
+    "invoice_total": "61696.30",
+    "gst_rate": 18,
+    "description": "PVC Ball Valve 1in, CPVC Pipe 1in 3m",
+    "confidence": {
+      "supplier_gstin": 0.97,
+      "invoice_number": 0.97,
+      "invoice_date": 0.97,
+      "total_gst": 0.97,
+      "taxable_value": 0.97,
+      "invoice_total": 0.97
+    },
+    "boxes": {
+      "supplier_gstin": [
+        163,
+        373,
+        179,
+        641
+      ],
+      "invoice_number": [
+        206,
+        103,
+        221,
+        324
+      ],
+      "invoice_date": [
+        216,
+        744,
+        229,
+        909
+      ],
+      "total_gst": [
+        487,
+        799,
+        501,
+        903
+      ],
+      "invoice_total": [
+        512,
+        787,
+        526,
+        902
+      ]
+    }
+  },
+  "degradation": "crumpled",
+  "printed_tax_override": null
+}

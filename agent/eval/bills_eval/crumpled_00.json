@@ -1,0 +1,77 @@
+{
+  "truth": {
+    "is_bill": true,
+    "supplier_name": "Bhawani Steel Co",
+    "supplier_gstin": "08CMKCU3526W1ZJ",
+    "printed_gstin": "08CMKCU3526W1ZJ",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "INV-9437",
+    "invoice_date": "2026-08-05",
+    "taxable_value": "38940.00",
+    "cgst": "3504.60",
+    "sgst": "3504.60",
+    "igst": "0.00",
+    "total_gst": "7009.20",
+    "invoice_total": "45949.20",
+    "gst_rate": 18,
+    "description": "Cement OPC 53 Grade 50kg"
+  },
+  "fixture": {
+    "is_bill": true,
+    "supplier_name": "Bhawani Steel Co",
+    "supplier_gstin": "08CMKCU3526W1ZJ",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "INV-9437",
+    "invoice_date": "2026-08-05",
+    "taxable_value": "38940.00",
+    "cgst": "3504.60",
+    "sgst": "3504.60",
+    "igst": "0.00",
+    "total_gst": "7009.20",
+    "invoice_total": "45949.20",
+    "gst_rate": 18,
+    "description": "Cement OPC 53 Grade 50kg",
+    "confidence": {
+      "supplier_gstin": 0.97,
+      "invoice_number": 0.97,
+      "invoice_date": 0.97,
+      "total_gst": 0.97,
+      "taxable_value": 0.97,
+      "invoice_total": 0.97
+    },
+    "boxes": {
+      "supplier_gstin": [
+        163,
+        375,
+        179,
+        642
+      ],
+      "invoice_number": [
+        206,
+        105,
+        221,
+        325
+      ],
+      "invoice_date": [
+        217,
+        744,
+        230,
+        909
+      ],
+      "total_gst": [
+        464,
+        799,
+        477,
+        902
+      ],
+      "invoice_total": [
+        489,
+        786,
+        502,
+        901
+      ]
+    }
+  },
+  "degradation": "crumpled",
+  "printed_tax_override": null
+}

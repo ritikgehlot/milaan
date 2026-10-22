@@ -1,0 +1,77 @@
+{
+  "truth": {
+    "is_bill": true,
+    "supplier_name": "Kailash Electricals",
+    "supplier_gstin": "08KRFFT8897R1ZJ",
+    "printed_gstin": "08KRFFT8897R1ZJ",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "INV-8600",
+    "invoice_date": "2026-07-17",
+    "taxable_value": "19440.00",
+    "cgst": "2721.60",
+    "sgst": "2721.60",
+    "igst": "0.00",
+    "total_gst": "5443.20",
+    "invoice_total": "24883.20",
+    "gst_rate": 28,
+    "description": "Wall Putty 40kg"
+  },
+  "fixture": {
+    "is_bill": true,
+    "supplier_name": "Kailash Electricals",
+    "supplier_gstin": "08KRFFT8897R1ZJ",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "INV-8600",
+    "invoice_date": "2026-07-17",
+    "taxable_value": "19440.00",
+    "cgst": "2721.60",
+    "sgst": "2721.60",
+    "igst": "0.00",
+    "total_gst": "5443.20",
+    "invoice_total": "24883.20",
+    "gst_rate": 28,
+    "description": "Wall Putty 40kg",
+    "confidence": {
+      "supplier_gstin": 0.97,
+      "invoice_number": 0.97,
+      "invoice_date": 0.97,
+      "total_gst": 0.97,
+      "taxable_value": 0.97,
+      "invoice_total": 0.97
+    },
+    "boxes": {
+      "supplier_gstin": [
+        164,
+        355,
+        183,
+        618
+      ],
+      "invoice_number": [
+        218,
+        91,
+        236,
+        309
+      ],
+      "invoice_date": [
+        205,
+        722,
+        220,
+        884
+      ],
+      "total_gst": [
+        450,
+        792,
+        464,
+        894
+      ],
+      "invoice_total": [
+        475,
+        782,
+        489,
+        895
+      ]
+    }
+  },
+  "degradation": "blur",
+  "printed_tax_override": null
+}

@@ -1,0 +1,77 @@
+{
+  "truth": {
+    "is_bill": true,
+    "supplier_name": "Umaid Cement Depot",
+    "supplier_gstin": "08JTTFX2742W1ZG",
+    "printed_gstin": "08JTTFX2742W1ZG",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "UM/186",
+    "invoice_date": "2026-08-01",
+    "taxable_value": "101718.00",
+    "cgst": "6103.08",
+    "sgst": "6103.08",
+    "igst": "0.00",
+    "total_gst": "12206.16",
+    "invoice_total": "113924.16",
+    "gst_rate": 12,
+    "description": "Wall Putty 40kg, Mortise Lock Set"
+  },
+  "fixture": {
+    "is_bill": true,
+    "supplier_name": "Umaid Cement Depot",
+    "supplier_gstin": "08JTTFX2742W1ZG",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "UM/186",
+    "invoice_date": "2026-08-01",
+    "taxable_value": "101718.00",
+    "cgst": "6103.08",
+    "sgst": "6103.08",
+    "igst": "0.00",
+    "total_gst": "12206.16",
+    "invoice_total": "113924.16",
+    "gst_rate": 12,
+    "description": "Wall Putty 40kg, Mortise Lock Set",
+    "confidence": {
+      "supplier_gstin": 0.97,
+      "invoice_number": 0.97,
+      "invoice_date": 0.97,
+      "total_gst": 0.97,
+      "taxable_value": 0.97,
+      "invoice_total": 0.97
+    },
+    "boxes": {
+      "supplier_gstin": [
+        163,
+        358,
+        178,
+        626
+      ],
+      "invoice_number": [
+        214,
+        90,
+        230,
+        294
+      ],
+      "invoice_date": [
+        207,
+        731,
+        220,
+        896
+      ],
+      "total_gst": [
+        500,
+        787,
+        514,
+        903
+      ],
+      "invoice_total": [
+        526,
+        775,
+        539,
+        903
+      ]
+    }
+  },
+  "degradation": "smudge_gstin",
+  "printed_tax_override": null
+}

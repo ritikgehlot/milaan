@@ -1,0 +1,77 @@
+{
+  "truth": {
+    "is_bill": true,
+    "supplier_name": "Paota Sanitary Mart",
+    "supplier_gstin": "08SCGPG2898C1Z3",
+    "printed_gstin": "08SCGPG2898C1Z3",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "PAO/26-27/9159",
+    "invoice_date": "2026-09-23",
+    "taxable_value": "57035.00",
+    "cgst": "7984.90",
+    "sgst": "7984.90",
+    "igst": "0.00",
+    "total_gst": "15969.80",
+    "invoice_total": "73004.80",
+    "gst_rate": 28,
+    "description": "SS Hinges 4in, Mortise Lock Set"
+  },
+  "fixture": {
+    "is_bill": true,
+    "supplier_name": "Paota Sanitary Mart",
+    "supplier_gstin": "08SCGPG2898C1Z3",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "PAO/26-27/9159",
+    "invoice_date": "2026-09-23",
+    "taxable_value": "57035.00",
+    "cgst": "7984.90",
+    "sgst": "7984.90",
+    "igst": "0.00",
+    "total_gst": "15969.80",
+    "invoice_total": "73004.80",
+    "gst_rate": 28,
+    "description": "SS Hinges 4in, Mortise Lock Set",
+    "confidence": {
+      "supplier_gstin": 0.97,
+      "invoice_number": 0.97,
+      "invoice_date": 0.97,
+      "total_gst": 0.97,
+      "taxable_value": 0.97,
+      "invoice_total": 0.97
+    },
+    "boxes": {
+      "supplier_gstin": [
+        120,
+        335,
+        130,
+        627
+      ],
+      "invoice_number": [
+        153,
+        121,
+        164,
+        444
+      ],
+      "invoice_date": [
+        171,
+        122,
+        180,
+        304
+      ],
+      "total_gst": [
+        361,
+        735,
+        370,
+        857
+      ],
+      "invoice_total": [
+        377,
+        736,
+        387,
+        858
+      ]
+    }
+  },
+  "degradation": "smudge_total",
+  "printed_tax_override": null
+}

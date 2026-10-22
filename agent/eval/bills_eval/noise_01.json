@@ -1,0 +1,77 @@
+{
+  "truth": {
+    "is_bill": true,
+    "supplier_name": "Marwar Traders",
+    "supplier_gstin": "08VEMFN7179H1ZU",
+    "printed_gstin": "08VEMFN7179H1ZU",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "INV-5951",
+    "invoice_date": "2026-10-22",
+    "taxable_value": "19500.00",
+    "cgst": "1755.00",
+    "sgst": "1755.00",
+    "igst": "0.00",
+    "total_gst": "3510.00",
+    "invoice_total": "23010.00",
+    "gst_rate": 18,
+    "description": "Tile Adhesive 20kg"
+  },
+  "fixture": {
+    "is_bill": true,
+    "supplier_name": "Marwar Traders",
+    "supplier_gstin": "08VEMFN7179H1ZU",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "INV-5951",
+    "invoice_date": "2026-10-22",
+    "taxable_value": "19500.00",
+    "cgst": "1755.00",
+    "sgst": "1755.00",
+    "igst": "0.00",
+    "total_gst": "3510.00",
+    "invoice_total": "23010.00",
+    "gst_rate": 18,
+    "description": "Tile Adhesive 20kg",
+    "confidence": {
+      "supplier_gstin": 0.97,
+      "invoice_number": 0.97,
+      "invoice_date": 0.97,
+      "total_gst": 0.97,
+      "taxable_value": 0.97,
+      "invoice_total": 0.97
+    },
+    "boxes": {
+      "supplier_gstin": [
+        161,
+        361,
+        174,
+        633
+      ],
+      "invoice_number": [
+        210,
+        88,
+        223,
+        312
+      ],
+      "invoice_date": [
+        208,
+        738,
+        220,
+        906
+      ],
+      "total_gst": [
+        457,
+        803,
+        470,
+        908
+      ],
+      "invoice_total": [
+        483,
+        791,
+        495,
+        908
+      ]
+    }
+  },
+  "degradation": "noise",
+  "printed_tax_override": null
+}

@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>MILAAN | GST invoice reconciliation assistant</title>
+  <meta name="description" content="MILAAN compares purchase invoice records with imported GSTR-2B data, highlights discrepancies, and helps your team organize supplier follow-ups for human review.">
+  <meta name="theme-color" content="#0d3b32">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="shell header-row">
+      <a class="brand" href="index.html" aria-label="MILAAN home">
+        <span class="brand-mark" aria-hidden="true">M</span>
+        <span class="brand-word">MILAAN</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+        <span class="nav-toggle-lines" aria-hidden="true">
+          <span></span>
+          <span></span>
+        </span>
+        <span class="sr-only">Open menu</span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <a href="#product">Product</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#trust">Trust</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn-primary btn-nav" href="http://127.0.0.1:8501" target="_blank" rel="noopener" data-demo-link>Try the demo</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">GST reconciliation assistant</p>
+          <h1>Know which invoices<br><em>need attention.</em></h1>
+          <p class="hero-lede">MILAAN compares purchase invoice records with GSTR-2B data, highlights discrepancies, and helps your team organize the next step.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="http://127.0.0.1:8501" target="_blank" rel="noopener" data-demo-link>Try the demo</a>
+            <a class="link-arrow" href="#how-it-works">See how it works <span aria-hidden="true">↓</span></a>
+          </div>
+          <p class="hero-note">Runs locally with synthetic records. No account required.</p>
+        </div>
+
+        <figure class="hero-figure">
+          <a class="shot-link" href="assets/milaan-dashboard.png" target="_blank" rel="noopener" aria-label="Open the full synthetic demo dashboard screenshot">
+            <img src="assets/milaan-dashboard-crop.png" width="2544" height="1850" alt="MILAAN dashboard showing five synthetic invoices, four exceptions, and one reconciled invoice." fetchpriority="high">
+          </a>
+          <figcaption><span class="dot"></span>Synthetic demo. Five invoices, four exceptions, and one exact match.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="fact-strip" aria-label="How MILAAN works">
+      <div class="shell fact-grid">
+        <div class="fact">
+          <span class="fact-index">01</span>
+          <p><strong>Exact evidence first.</strong> Matching uses supplier GSTIN, invoice number, tax period and GST amounts.</p>
+        </div>
+        <div class="fact">
+          <span class="fact-index">02</span>
+          <p><strong>Human review stays explicit.</strong> Follow-up drafts require confirmation before they can move to delivery review.</p>
+        </div>
+        <div class="fact">
+          <span class="fact-index">03</span>
+          <p><strong>Every step leaves a record.</strong> Imports, runs, draft events and decisions are persisted in SQLite.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="product">
+      <div class="shell">
+        <div class="section-head">
+          <h2>A reconciliation record, not a black box.</h2>
+          <p class="section-lede">Review the exact invoice and GSTR-2B evidence behind each result. When the evidence is ambiguous, MILAAN flags it for review instead of choosing a candidate automatically.</p>
+        </div>
+
+        <div class="product-grid">
+          <figure class="figure-frame">
+            <a class="shot-link" href="assets/milaan-reconciliation.png" target="_blank" rel="noopener" aria-label="Open the full synthetic reconciliation screenshot">
+              <img src="assets/milaan-reconciliation-crop.png" width="2950" height="1915" alt="Reconciliation summary for a synthetic GSTR-2B batch, listing matched, amount mismatch, missing, and not eligible invoices." loading="lazy">
+            </a>
+            <figcaption>Synthetic demo. Run summary and invoice-level evidence. <a href="assets/milaan-reconciliation.png" target="_blank" rel="noopener">Open full screenshot</a></figcaption>
+          </figure>
+
+          <div class="outcome-panel">
+            <h3>What the result says</h3>
+            <ul class="outcome-list">
+              <li>
+                <span class="status-label status-matched">Matched</span>
+                <p>The selected GSTR-2B batch contains an exact counterpart for the invoice.</p>
+              </li>
+              <li>
+                <span class="status-label status-mismatch">Amount mismatch</span>
+                <p>The invoice and GSTR-2B entry differ in total GST. The difference is shown in the evidence table.</p>
+              </li>
+              <li>
+                <span class="status-label status-missing">Missing from 2B</span>
+                <p>The selected batch has no usable counterpart. This is a prompt to review, not a conclusion about the supplier.</p>
+              </li>
+              <li>
+                <span class="status-label status-review">Needs review</span>
+                <p>Duplicate or ambiguous evidence requires a human decision. No candidate is auto-selected.</p>
+              </li>
+              <li>
+                <span class="status-label status-ineligible">Not eligible</span>
+                <p>The invoice is not valid or cannot be matched under the current rules.</p>
+              </li>
+            </ul>
+            <p class="example-note">Example from the synthetic demo: 5 invoices, 1 matched, 1 amount mismatch, 2 missing, 1 not eligible.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-quiet" id="how-it-works">
+      <div class="shell">
+        <div class="section-head">
+          <h2>From purchase file to a reviewed follow-up.</h2>
+          <p class="section-lede">The workflow stays deterministic and legible. You can see what was imported, how it was matched and what a person approved.</p>
+        </div>
+
+        <ol class="steps">
+          <li class="step">
+            <span class="step-num">01</span>
+            <h3>Upload purchase invoices</h3>
+            <p>Add supplier and invoice records through the application. Validation checks required fields, GSTIN structure, rates and arithmetic.</p>
+          </li>
+          <li class="step">
+            <span class="step-num">02</span>
+            <h3>Import GSTR-2B</h3>
+            <p>Upload a normalized CSV or XLSX file. Accepted rows are staged, and rejected rows stay in the row-level audit trail.</p>
+          </li>
+          <li class="step">
+            <span class="step-num">03</span>
+            <h3>Review the result</h3>
+            <p>Compare matched, mismatched, missing and review-required invoices against the selected GSTR-2B batch.</p>
+          </li>
+          <li class="step">
+            <span class="step-num">04</span>
+            <h3>Prepare follow-ups</h3>
+            <p>Draft supplier messages only for eligible, unambiguous missing rows. A person reviews and approves each draft.</p>
+          </li>
+        </ol>
+
+        <p class="scope-note"><span>Current importer scope: MILAAN's normalized CSV and XLSX schema, plus common accounting-export column labels. Compatibility with every native GST portal export layout has not been established.</span></p>
+      </div>
+    </section>
+
+    <section class="section" id="capabilities">
+      <div class="shell">
+        <div class="section-head">
+          <h2>Built for the review, not just the total.</h2>
+          <p class="section-lede">The product is deliberately narrow. Each capability supports a reconciliation record that a finance team can inspect.</p>
+        </div>
+
+        <dl class="capability-list">
+          <div class="capability">
+            <span class="capability-num">01</span>
+            <div>
+              <h3>Invoice validation</h3>
+              <p>Input checks cover required fields, GSTIN syntax and checksum, tax rate, tax structure, arithmetic and duplicates.</p>
+            </div>
+          </div>
+          <div class="capability">
+            <span class="capability-num">02</span>
+            <div>
+              <h3>Structured GSTR-2B imports</h3>
+              <p>The importer accepts the documented normalized schema. Every source row is stored with its validation outcome.</p>
+            </div>
+          </div>
+          <div class="capability">
+            <span class="capability-num">03</span>
+            <div>
+              <h3>Deterministic reconciliation</h3>
+              <p>Matching is rule-based. Ambiguous candidates are flagged for review instead of selected automatically.</p>
+            </div>
+          </div>
+          <div class="capability">
+            <span class="capability-num">04</span>
+            <div>
+              <h3>Discrepancy classification</h3>
+              <p>Results are classified as matched, amount mismatch, missing from the selected batch, needs review or not eligible.</p>
+            </div>
+          </div>
+          <div class="capability">
+            <span class="capability-num">05</span>
+            <div>
+              <h3>Supplier follow-up drafts</h3>
+              <p>Drafts are prepared only for valid invoices with an unambiguous missing row. They remain editable until approved.</p>
+            </div>
+          </div>
+          <div class="capability">
+            <span class="capability-num">06</span>
+            <div>
+              <h3>Human approval and audit history</h3>
+              <p>Approval is recorded with a snapshot of the draft. Import, reconciliation and draft events remain reviewable.</p>
+            </div>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section demo" id="demo">
+      <div class="shell demo-grid">
+        <div>
+          <h2>Try the workflow with synthetic records.</h2>
+          <p class="section-lede">The demo is the working Streamlit application, not a scripted mockup. It runs locally with a separate synthetic database.</p>
+
+          <ul class="demo-list">
+            <li><span>Purchase invoices</span><strong>5 synthetic records</strong></li>
+            <li><span>Validation</span><strong>4 valid, 1 invalid</strong></li>
+            <li><span>GSTR-2B import</span><strong>2 accepted, 1 rejected</strong></li>
+            <li><span>Reconciliation</span><strong>1 matched, 1 amount mismatch, 2 missing, 1 not eligible</strong></li>
+            <li><span>Follow-ups</span><strong>2 drafts, 1 approved, no message sent</strong></li>
+          </ul>
+
+          <a class="btn btn-primary" href="http://127.0.0.1:8501" target="_blank" rel="noopener" data-demo-link>Try the demo</a>
+          <p class="demo-note">Live WhatsApp delivery is disabled. No GST return is filed. All demo suppliers, GSTINs, phone numbers and amounts are fabricated.</p>
+        </div>
+
+        <figure class="figure-frame">
+          <a class="shot-link" href="assets/milaan-followups.png" target="_blank" rel="noopener" aria-label="Open the full synthetic follow-up screenshot">
+            <img src="assets/milaan-followups-crop.png" width="2950" height="2070" alt="Supplier follow-up drafts with one draft and one approved record in the synthetic demo. No message was sent." loading="lazy">
+          </a>
+          <figcaption>Synthetic demo. One draft, one approved record, and live sending off. <a href="assets/milaan-followups.png" target="_blank" rel="noopener">Open full screenshot</a></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" id="trust">
+      <div class="shell trust-grid">
+        <div class="trust-intro">
+          <h2>Useful evidence, clearly bounded.</h2>
+          <p class="section-lede">MILAAN helps a team decide what needs attention. It does not make the tax decision for them.</p>
+          <a class="privacy-link" href="privacy.html">Read how the demo handles data</a>
+        </div>
+
+        <div class="trust-columns">
+          <div class="trust-list">
+            <h3>What MILAAN does</h3>
+            <ul>
+              <li>Compares purchase invoice records with a selected GSTR-2B batch.</li>
+              <li>Surfaces exact matches, differences, missing rows and cases needing review.</li>
+              <li>Preserves import and reconciliation evidence.</li>
+              <li>Prepares neutral supplier follow-up drafts for human approval.</li>
+              <li>Records draft approval and audit history.</li>
+            </ul>
+          </div>
+          <div class="trust-list is-boundary">
+            <h3>What it does not do</h3>
+            <ul>
+              <li>Determine whether ITC is legally eligible or recoverable.</li>
+              <li>Prove that a supplier has not filed a return.</li>
+              <li>File GST returns or act as a tax adviser.</li>
+              <li>Extract invoice data from photos or PDFs automatically.</li>
+              <li>Send WhatsApp messages automatically or make trained ML predictions.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-quiet" id="faq">
+      <div class="shell faq-grid">
+        <div>
+          <h2>Questions, answered plainly.</h2>
+          <p class="section-lede">What the current build does, what it does not do, and where a person still has to decide.</p>
+        </div>
+
+        <div class="faq-list">
+          <details>
+            <summary>What does MILAAN do?</summary>
+            <p>It compares purchase invoice records with imported GSTR-2B data, identifies discrepancies, stores the evidence and prepares supplier follow-up drafts for human review.</p>
+          </details>
+          <details>
+            <summary>What is GSTR-2B?</summary>
+            <p>GSTR-2B is a GST return statement that summarises input tax credit available to a registered buyer for a tax period. MILAAN uses an imported, normalized copy. It does not connect to the GST portal.</p>
+          </details>
+          <details>
+            <summary>What happens when an invoice does not match?</summary>
+            <p>MILAAN classifies it, for example as an amount mismatch, missing from the selected batch, or needing review. A missing match is a prompt to check the evidence, not a conclusion about the supplier or ITC.</p>
+          </details>
+          <details>
+            <summary>Which files can I upload?</summary>
+            <p>The current importer accepts a normalized CSV or XLSX schema with supplier GSTIN, invoice number, invoice date, tax period and tax amounts. Common accounting-export labels are also recognized. Every native portal export layout is not supported.</p>
+          </details>
+          <details>
+            <summary>Does MILAAN file GST returns?</summary>
+            <p>No. It does not file returns or connect to a government filing system.</p>
+          </details>
+          <details>
+            <summary>Does it send WhatsApp messages automatically?</summary>
+            <p>No. Follow-up drafts require human approval, and live WhatsApp delivery is disabled in this build. The demo can record mock delivery only.</p>
+          </details>
+          <details>
+            <summary>Does a missing match mean I can claim ITC?</summary>
+            <p>No. A missing match only means the selected GSTR-2B batch has no usable counterpart. It does not establish supplier non-filing, ITC eligibility or recoverability.</p>
+          </details>
+          <details>
+            <summary>Is the demo using real business records?</summary>
+            <p>No. Every supplier, GSTIN, phone number and amount in the demo is synthetic.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="MILAAN home">
+            <span class="brand-mark" aria-hidden="true">M</span>
+            <span class="brand-word">MILAAN</span>
+          </a>
+          <p class="footer-tagline">Your invoices. One clearer picture.</p>
+          <p class="footer-copy">Compare purchase invoices with GSTR-2B data, identify discrepancies, and organize supplier follow-ups in one workflow.</p>
+        </div>
+
+        <div class="footer-links">
+          <div>
+            <h2>Product</h2>
+            <a href="#product">Product</a>
+            <a href="#how-it-works">How it works</a>
+            <a href="http://127.0.0.1:8501" target="_blank" rel="noopener" data-demo-link>Demo</a>
+          </div>
+          <div>
+            <h2>Legal</h2>
+            <a href="terms.html">Terms of Service</a>
+            <a href="privacy.html">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>No GST filing. No live WhatsApp delivery. Demo data is synthetic.</p>
+        <p>Draft site for review · 2026</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

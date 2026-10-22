@@ -1,0 +1,77 @@
+{
+  "truth": {
+    "is_bill": true,
+    "supplier_name": "Bhawani Steel Co",
+    "supplier_gstin": "08UCRPP3539L1ZA",
+    "printed_gstin": "08UCRPP3539L1ZA",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "INV-4619",
+    "invoice_date": "2026-08-23",
+    "taxable_value": "12692.00",
+    "cgst": "0.00",
+    "sgst": "0.00",
+    "igst": "3553.76",
+    "total_gst": "3553.76",
+    "invoice_total": "16245.76",
+    "gst_rate": 28,
+    "description": "GI Wire 12g (kg), Mortise Lock Set"
+  },
+  "fixture": {
+    "is_bill": true,
+    "supplier_name": "Bhawani Steel Co",
+    "supplier_gstin": "08UCRPP3539L1ZA",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "INV-4619",
+    "invoice_date": "2026-08-23",
+    "taxable_value": "12692.00",
+    "cgst": "0.00",
+    "sgst": "0.00",
+    "igst": "3553.76",
+    "total_gst": "3553.76",
+    "invoice_total": "16245.76",
+    "gst_rate": 28,
+    "description": "GI Wire 12g (kg), Mortise Lock Set",
+    "confidence": {
+      "supplier_gstin": 0.97,
+      "invoice_number": 0.97,
+      "invoice_date": 0.97,
+      "total_gst": 0.97,
+      "taxable_value": 0.97,
+      "invoice_total": 0.97
+    },
+    "boxes": {
+      "supplier_gstin": [
+        120,
+        335,
+        130,
+        627
+      ],
+      "invoice_number": [
+        154,
+        121,
+        164,
+        364
+      ],
+      "invoice_date": [
+        171,
+        122,
+        180,
+        304
+      ],
+      "total_gst": [
+        329,
+        745,
+        337,
+        854
+      ],
+      "invoice_total": [
+        345,
+        734,
+        354,
+        855
+      ]
+    }
+  },
+  "degradation": "smudge_total",
+  "printed_tax_override": null
+}

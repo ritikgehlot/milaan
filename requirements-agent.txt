@@ -1,0 +1,4 @@
+-r requirements.txt
+flask>=3.0,<4
+pillow>=10
+pandas>=2

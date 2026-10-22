@@ -1,0 +1,77 @@
+{
+  "truth": {
+    "is_bill": true,
+    "supplier_name": "Marwar Traders",
+    "supplier_gstin": "08TGTCF4047N1Z1",
+    "printed_gstin": "08TGTCF4047N1Z1",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "MAR/26-27/2116",
+    "invoice_date": "2026-09-14",
+    "taxable_value": "79640.00",
+    "cgst": "11149.60",
+    "sgst": "11149.60",
+    "igst": "0.00",
+    "total_gst": "22299.20",
+    "invoice_total": "101939.20",
+    "gst_rate": 28,
+    "description": "PVC Ball Valve 1in, Mortise Lock Set"
+  },
+  "fixture": {
+    "is_bill": true,
+    "supplier_name": "Marwar Traders",
+    "supplier_gstin": "08TGTCF4047N1Z1",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "MAR/26-27/2116",
+    "invoice_date": "2026-09-14",
+    "taxable_value": "79640.00",
+    "cgst": "11149.60",
+    "sgst": "11149.60",
+    "igst": "0.00",
+    "total_gst": "22299.20",
+    "invoice_total": "101939.20",
+    "gst_rate": 28,
+    "description": "PVC Ball Valve 1in, Mortise Lock Set",
+    "confidence": {
+      "supplier_gstin": 0.97,
+      "invoice_number": 0.97,
+      "invoice_date": 0.97,
+      "total_gst": 0.97,
+      "taxable_value": 0.97,
+      "invoice_total": 0.97
+    },
+    "boxes": {
+      "supplier_gstin": [
+        119,
+        360,
+        128,
+        657
+      ],
+      "invoice_number": [
+        149,
+        139,
+        158,
+        475
+      ],
+      "invoice_date": [
+        166,
+        138,
+        174,
+        324
+      ],
+      "total_gst": [
+        350,
+        750,
+        358,
+        875
+      ],
+      "invoice_total": [
+        366,
+        737,
+        374,
+        873
+      ]
+    }
+  },
+  "degradation": "blur",
+  "printed_tax_override": null
+}

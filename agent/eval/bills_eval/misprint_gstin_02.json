@@ -1,0 +1,77 @@
+{
+  "truth": {
+    "is_bill": true,
+    "supplier_name": "Umaid Cement Depot",
+    "supplier_gstin": "08AELCA2722N1Z7",
+    "printed_gstin": "08ACLCA2722N1Z7",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "UMA/26-27/7842",
+    "invoice_date": "2026-07-06",
+    "taxable_value": "11872.50",
+    "cgst": "1662.15",
+    "sgst": "1662.15",
+    "igst": "0.00",
+    "total_gst": "3324.30",
+    "invoice_total": "15196.80",
+    "gst_rate": 28,
+    "description": "GI Wire 12g (kg), TMT Bar Fe500 (kg)"
+  },
+  "fixture": {
+    "is_bill": true,
+    "supplier_name": "Umaid Cement Depot",
+    "supplier_gstin": "08ACLCA2722N1Z7",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "UMA/26-27/7842",
+    "invoice_date": "2026-07-06",
+    "taxable_value": "11872.50",
+    "cgst": "1662.15",
+    "sgst": "1662.15",
+    "igst": "0.00",
+    "total_gst": "3324.30",
+    "invoice_total": "15196.80",
+    "gst_rate": 28,
+    "description": "GI Wire 12g (kg), TMT Bar Fe500 (kg)",
+    "confidence": {
+      "supplier_gstin": 0.97,
+      "invoice_number": 0.97,
+      "invoice_date": 0.97,
+      "total_gst": 0.97,
+      "taxable_value": 0.97,
+      "invoice_total": 0.97
+    },
+    "boxes": {
+      "supplier_gstin": [
+        118,
+        345,
+        126,
+        647
+      ],
+      "invoice_number": [
+        150,
+        122,
+        158,
+        464
+      ],
+      "invoice_date": [
+        167,
+        122,
+        175,
+        311
+      ],
+      "total_gst": [
+        348,
+        762,
+        355,
+        874
+      ],
+      "invoice_total": [
+        364,
+        750,
+        372,
+        876
+      ]
+    }
+  },
+  "degradation": "clean",
+  "printed_tax_override": null
+}

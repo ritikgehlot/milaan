@@ -1,0 +1,77 @@
+{
+  "truth": {
+    "is_bill": true,
+    "supplier_name": "Paota Sanitary Mart",
+    "supplier_gstin": "08JEZPD1300U1ZO",
+    "printed_gstin": "08JEZPD1300U1ZO",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "PAO/26-27/8958",
+    "invoice_date": "2026-08-28",
+    "taxable_value": "6150.00",
+    "cgst": "861.00",
+    "sgst": "861.00",
+    "igst": "0.00",
+    "total_gst": "1722.00",
+    "invoice_total": "7872.00",
+    "gst_rate": 28,
+    "description": "CPVC Pipe 1in 3m"
+  },
+  "fixture": {
+    "is_bill": true,
+    "supplier_name": "Paota Sanitary Mart",
+    "supplier_gstin": "08JEZPD1300U1ZO",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "PAO/26-27/8958",
+    "invoice_date": "2026-08-28",
+    "taxable_value": "6150.00",
+    "cgst": "861.00",
+    "sgst": "861.00",
+    "igst": "0.00",
+    "total_gst": "1722.00",
+    "invoice_total": "7872.00",
+    "gst_rate": 28,
+    "description": "CPVC Pipe 1in 3m",
+    "confidence": {
+      "supplier_gstin": 0.97,
+      "invoice_number": 0.97,
+      "invoice_date": 0.97,
+      "total_gst": 0.97,
+      "taxable_value": 0.97,
+      "invoice_total": 0.97
+    },
+    "boxes": {
+      "supplier_gstin": [
+        119,
+        339,
+        129,
+        634
+      ],
+      "invoice_number": [
+        152,
+        122,
+        162,
+        449
+      ],
+      "invoice_date": [
+        170,
+        122,
+        178,
+        307
+      ],
+      "total_gst": [
+        330,
+        751,
+        339,
+        860
+      ],
+      "invoice_total": [
+        346,
+        751,
+        355,
+        861
+      ]
+    }
+  },
+  "degradation": "jpeg",
+  "printed_tax_override": null
+}

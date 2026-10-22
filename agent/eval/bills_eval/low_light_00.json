@@ -1,0 +1,77 @@
+{
+  "truth": {
+    "is_bill": true,
+    "supplier_name": "Chopasni Pipe House",
+    "supplier_gstin": "08UYFCM3568M1Z0",
+    "printed_gstin": "08UYFCM3568M1Z0",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "INV-8440",
+    "invoice_date": "2026-08-04",
+    "taxable_value": "5280.00",
+    "cgst": "739.20",
+    "sgst": "739.20",
+    "igst": "0.00",
+    "total_gst": "1478.40",
+    "invoice_total": "6758.40",
+    "gst_rate": 28,
+    "description": "Cement OPC 53 Grade 50kg"
+  },
+  "fixture": {
+    "is_bill": true,
+    "supplier_name": "Chopasni Pipe House",
+    "supplier_gstin": "08UYFCM3568M1Z0",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "INV-8440",
+    "invoice_date": "2026-08-04",
+    "taxable_value": "5280.00",
+    "cgst": "739.20",
+    "sgst": "739.20",
+    "igst": "0.00",
+    "total_gst": "1478.40",
+    "invoice_total": "6758.40",
+    "gst_rate": 28,
+    "description": "Cement OPC 53 Grade 50kg",
+    "confidence": {
+      "supplier_gstin": 0.97,
+      "invoice_number": 0.97,
+      "invoice_date": 0.97,
+      "total_gst": 0.97,
+      "taxable_value": 0.97,
+      "invoice_total": 0.97
+    },
+    "boxes": {
+      "supplier_gstin": [
+        162,
+        360,
+        177,
+        629
+      ],
+      "invoice_number": [
+        212,
+        89,
+        226,
+        311
+      ],
+      "invoice_date": [
+        208,
+        734,
+        220,
+        900
+      ],
+      "total_gst": [
+        455,
+        800,
+        468,
+        904
+      ],
+      "invoice_total": [
+        481,
+        800,
+        493,
+        905
+      ]
+    }
+  },
+  "degradation": "low_light",
+  "printed_tax_override": null
+}

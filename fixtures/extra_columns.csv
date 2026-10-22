@@ -1,0 +1,2 @@
+supplier_gstin,invoice_number,invoice_date,tax_period,taxable_value,cgst,sgst,igst,total_gst,remarks
+27AAACS1234A1Z2,INV-FIX-EXTRA,2026-03-05,2026-03,12500.00,1125.00,1125.00,0.00,2250.00,synthetic note

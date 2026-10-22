@@ -1,0 +1,77 @@
+{
+  "truth": {
+    "is_bill": true,
+    "supplier_name": "Sardarpura Paints",
+    "supplier_gstin": "08ZZTFR3999P1ZN",
+    "printed_gstin": "08ZZTFR3999P1ZN",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "INV-8498",
+    "invoice_date": "2026-10-03",
+    "taxable_value": "57150.00",
+    "cgst": "5143.50",
+    "sgst": "5143.50",
+    "igst": "0.00",
+    "total_gst": "10287.00",
+    "invoice_total": "67437.00",
+    "gst_rate": 18,
+    "description": "Tile Adhesive 20kg, Cement OPC 53 Grade 50kg"
+  },
+  "fixture": {
+    "is_bill": true,
+    "supplier_name": "Sardarpura Paints",
+    "supplier_gstin": "08ZZTFR3999P1ZN",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "INV-8498",
+    "invoice_date": "2026-10-03",
+    "taxable_value": "57150.00",
+    "cgst": "5143.50",
+    "sgst": "5143.50",
+    "igst": "0.00",
+    "total_gst": "10287.00",
+    "invoice_total": "67437.00",
+    "gst_rate": 18,
+    "description": "Tile Adhesive 20kg, Cement OPC 53 Grade 50kg",
+    "confidence": {
+      "supplier_gstin": 0.97,
+      "invoice_number": 0.97,
+      "invoice_date": 0.97,
+      "total_gst": 0.97,
+      "taxable_value": 0.97,
+      "invoice_total": 0.97
+    },
+    "boxes": {
+      "supplier_gstin": [
+        178,
+        329,
+        217,
+        563
+      ],
+      "invoice_number": [
+        254,
+        103,
+        288,
+        296
+      ],
+      "invoice_date": [
+        194,
+        659,
+        221,
+        804
+      ],
+      "total_gst": [
+        442,
+        746,
+        465,
+        848
+      ],
+      "invoice_total": [
+        465,
+        750,
+        488,
+        852
+      ]
+    }
+  },
+  "degradation": "rotated",
+  "printed_tax_override": null
+}

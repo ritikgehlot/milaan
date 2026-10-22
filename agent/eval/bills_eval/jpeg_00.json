@@ -1,0 +1,77 @@
+{
+  "truth": {
+    "is_bill": true,
+    "supplier_name": "Kailash Electricals",
+    "supplier_gstin": "08YVKCF7726E1ZL",
+    "printed_gstin": "08YVKCF7726E1ZL",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "INV-8496",
+    "invoice_date": "2026-10-01",
+    "taxable_value": "54610.00",
+    "cgst": "4914.90",
+    "sgst": "4914.90",
+    "igst": "0.00",
+    "total_gst": "9829.80",
+    "invoice_total": "64439.80",
+    "gst_rate": 18,
+    "description": "PVC Ball Valve 1in, Wall Putty 40kg"
+  },
+  "fixture": {
+    "is_bill": true,
+    "supplier_name": "Kailash Electricals",
+    "supplier_gstin": "08YVKCF7726E1ZL",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "INV-8496",
+    "invoice_date": "2026-10-01",
+    "taxable_value": "54610.00",
+    "cgst": "4914.90",
+    "sgst": "4914.90",
+    "igst": "0.00",
+    "total_gst": "9829.80",
+    "invoice_total": "64439.80",
+    "gst_rate": 18,
+    "description": "PVC Ball Valve 1in, Wall Putty 40kg",
+    "confidence": {
+      "supplier_gstin": 0.97,
+      "invoice_number": 0.97,
+      "invoice_date": 0.97,
+      "total_gst": 0.97,
+      "taxable_value": 0.97,
+      "invoice_total": 0.97
+    },
+    "boxes": {
+      "supplier_gstin": [
+        164,
+        376,
+        180,
+        643
+      ],
+      "invoice_number": [
+        206,
+        107,
+        221,
+        326
+      ],
+      "invoice_date": [
+        218,
+        744,
+        232,
+        908
+      ],
+      "total_gst": [
+        488,
+        797,
+        502,
+        900
+      ],
+      "invoice_total": [
+        513,
+        785,
+        527,
+        900
+      ]
+    }
+  },
+  "degradation": "jpeg",
+  "printed_tax_override": null
+}

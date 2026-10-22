@@ -1,0 +1,77 @@
+{
+  "truth": {
+    "is_bill": true,
+    "supplier_name": "Marwar Traders",
+    "supplier_gstin": "08JUSFJ6156E1ZM",
+    "printed_gstin": "08JUSFJ6156E1ZM",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "MA/152",
+    "invoice_date": "2026-07-27",
+    "taxable_value": "54371.00",
+    "cgst": "4893.39",
+    "sgst": "4893.39",
+    "igst": "0.00",
+    "total_gst": "9786.78",
+    "invoice_total": "64157.78",
+    "gst_rate": 18,
+    "description": "Tile Adhesive 20kg, GI Wire 12g (kg)"
+  },
+  "fixture": {
+    "is_bill": true,
+    "supplier_name": "Marwar Traders",
+    "supplier_gstin": "08JUSFJ6156E1ZM",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "MA/152",
+    "invoice_date": "2026-07-27",
+    "taxable_value": "54371.00",
+    "cgst": "4893.39",
+    "sgst": "4893.39",
+    "igst": "0.00",
+    "total_gst": "9786.78",
+    "invoice_total": "64157.78",
+    "gst_rate": 18,
+    "description": "Tile Adhesive 20kg, GI Wire 12g (kg)",
+    "confidence": {
+      "supplier_gstin": 0.97,
+      "invoice_number": 0.97,
+      "invoice_date": 0.97,
+      "total_gst": 0.97,
+      "taxable_value": 0.97,
+      "invoice_total": 0.97
+    },
+    "boxes": {
+      "supplier_gstin": [
+        163,
+        358,
+        179,
+        625
+      ],
+      "invoice_number": [
+        215,
+        90,
+        231,
+        293
+      ],
+      "invoice_date": [
+        207,
+        729,
+        220,
+        894
+      ],
+      "total_gst": [
+        500,
+        798,
+        514,
+        902
+      ],
+      "invoice_total": [
+        526,
+        787,
+        539,
+        902
+      ]
+    }
+  },
+  "degradation": "noise",
+  "printed_tax_override": null
+}

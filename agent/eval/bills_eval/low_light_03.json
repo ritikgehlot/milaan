@@ -1,0 +1,77 @@
+{
+  "truth": {
+    "is_bill": true,
+    "supplier_name": "Mehrangarh Building Supply",
+    "supplier_gstin": "08PYDPM9212Y1ZZ",
+    "printed_gstin": "08PYDPM9212Y1ZZ",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "INV-4532",
+    "invoice_date": "2026-09-13",
+    "taxable_value": "52930.00",
+    "cgst": "4763.70",
+    "sgst": "4763.70",
+    "igst": "0.00",
+    "total_gst": "9527.40",
+    "invoice_total": "62457.40",
+    "gst_rate": 18,
+    "description": "Mortise Lock Set, Cement OPC 53 Grade 50kg"
+  },
+  "fixture": {
+    "is_bill": true,
+    "supplier_name": "Mehrangarh Building Supply",
+    "supplier_gstin": "08PYDPM9212Y1ZZ",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "INV-4532",
+    "invoice_date": "2026-09-13",
+    "taxable_value": "52930.00",
+    "cgst": "4763.70",
+    "sgst": "4763.70",
+    "igst": "0.00",
+    "total_gst": "9527.40",
+    "invoice_total": "62457.40",
+    "gst_rate": 18,
+    "description": "Mortise Lock Set, Cement OPC 53 Grade 50kg",
+    "confidence": {
+      "supplier_gstin": 0.97,
+      "invoice_number": 0.97,
+      "invoice_date": 0.97,
+      "total_gst": 0.97,
+      "taxable_value": 0.97,
+      "invoice_total": 0.97
+    },
+    "boxes": {
+      "supplier_gstin": [
+        161,
+        363,
+        173,
+        636
+      ],
+      "invoice_number": [
+        208,
+        88,
+        220,
+        313
+      ],
+      "invoice_date": [
+        209,
+        742,
+        220,
+        910
+      ],
+      "total_gst": [
+        483,
+        805,
+        495,
+        911
+      ],
+      "invoice_total": [
+        508,
+        793,
+        520,
+        911
+      ]
+    }
+  },
+  "degradation": "low_light",
+  "printed_tax_override": null
+}

@@ -1,0 +1,77 @@
+{
+  "truth": {
+    "is_bill": true,
+    "supplier_name": "Paota Sanitary Mart",
+    "supplier_gstin": "08PLVCU6611G1ZU",
+    "printed_gstin": "08PLVCU6611G1ZU",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "INV-5744",
+    "invoice_date": "2026-07-24",
+    "taxable_value": "153450.00",
+    "cgst": "13810.50",
+    "sgst": "13810.50",
+    "igst": "0.00",
+    "total_gst": "27621.00",
+    "invoice_total": "181071.00",
+    "gst_rate": 18,
+    "description": "FR Wire 1.5sqmm 90m"
+  },
+  "fixture": {
+    "is_bill": true,
+    "supplier_name": "Paota Sanitary Mart",
+    "supplier_gstin": "08PLVCU6611G1ZU",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "INV-5744",
+    "invoice_date": "2026-07-24",
+    "taxable_value": "153450.00",
+    "cgst": "13810.50",
+    "sgst": "13810.50",
+    "igst": "0.00",
+    "total_gst": "27621.00",
+    "invoice_total": "181071.00",
+    "gst_rate": 18,
+    "description": "FR Wire 1.5sqmm 90m",
+    "confidence": {
+      "supplier_gstin": 0.97,
+      "invoice_number": 0.97,
+      "invoice_date": 0.97,
+      "total_gst": 0.97,
+      "taxable_value": 0.97,
+      "invoice_total": 0.97
+    },
+    "boxes": {
+      "supplier_gstin": [
+        120,
+        371,
+        130,
+        662
+      ],
+      "invoice_number": [
+        149,
+        154,
+        159,
+        397
+      ],
+      "invoice_date": [
+        165,
+        153,
+        175,
+        335
+      ],
+      "total_gst": [
+        335,
+        749,
+        345,
+        871
+      ],
+      "invoice_total": [
+        352,
+        735,
+        361,
+        869
+      ]
+    }
+  },
+  "degradation": "noise",
+  "printed_tax_override": null
+}

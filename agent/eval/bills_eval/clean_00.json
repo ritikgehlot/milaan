@@ -1,0 +1,77 @@
+{
+  "truth": {
+    "is_bill": true,
+    "supplier_name": "Suryanagri Hardware",
+    "supplier_gstin": "08WUPPU9042V1ZI",
+    "printed_gstin": "08WUPPU9042V1ZI",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "SUR/26-27/3659",
+    "invoice_date": "2026-10-08",
+    "taxable_value": "45200.00",
+    "cgst": "4068.00",
+    "sgst": "4068.00",
+    "igst": "0.00",
+    "total_gst": "8136.00",
+    "invoice_total": "53336.00",
+    "gst_rate": 18,
+    "description": "Tile Adhesive 20kg, GI Wire 12g (kg)"
+  },
+  "fixture": {
+    "is_bill": true,
+    "supplier_name": "Suryanagri Hardware",
+    "supplier_gstin": "08WUPPU9042V1ZI",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "SUR/26-27/3659",
+    "invoice_date": "2026-10-08",
+    "taxable_value": "45200.00",
+    "cgst": "4068.00",
+    "sgst": "4068.00",
+    "igst": "0.00",
+    "total_gst": "8136.00",
+    "invoice_total": "53336.00",
+    "gst_rate": 18,
+    "description": "Tile Adhesive 20kg, GI Wire 12g (kg)",
+    "confidence": {
+      "supplier_gstin": 0.97,
+      "invoice_number": 0.97,
+      "invoice_date": 0.97,
+      "total_gst": 0.97,
+      "taxable_value": 0.97,
+      "invoice_total": 0.97
+    },
+    "boxes": {
+      "supplier_gstin": [
+        120,
+        375,
+        131,
+        663
+      ],
+      "invoice_number": [
+        149,
+        159,
+        160,
+        481
+      ],
+      "invoice_date": [
+        165,
+        158,
+        175,
+        339
+      ],
+      "total_gst": [
+        352,
+        759,
+        361,
+        866
+      ],
+      "invoice_total": [
+        369,
+        746,
+        378,
+        867
+      ]
+    }
+  },
+  "degradation": "clean",
+  "printed_tax_override": null
+}

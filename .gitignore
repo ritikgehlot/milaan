@@ -1,0 +1,37 @@
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Environment files
+.env
+.env.local
+.streamlit/secrets.toml
+
+# Runtime data and backups
+backups/
+
+# SQLite Database
+*.db
+*.sqlite3
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# agent runtime data (databases, media, generated demo files), but keep the
+# eval results: EVALUATION.md cites them and they hold no personal data
+agent_data/*
+!agent_data/eval/
+
+# tunnel binary: download it on each machine
+cloudflared.exe

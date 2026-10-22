@@ -1,0 +1,77 @@
+{
+  "truth": {
+    "is_bill": true,
+    "supplier_name": "Paota Sanitary Mart",
+    "supplier_gstin": "08CENFU5283K1Z5",
+    "printed_gstin": "08CENFU5283K1Z5",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "PA/678",
+    "invoice_date": "2026-07-24",
+    "taxable_value": "50646.00",
+    "cgst": "7090.44",
+    "sgst": "7090.44",
+    "igst": "0.00",
+    "total_gst": "14180.88",
+    "invoice_total": "64826.88",
+    "gst_rate": 28,
+    "description": "Tile Adhesive 20kg, GI Wire 12g (kg)"
+  },
+  "fixture": {
+    "is_bill": true,
+    "supplier_name": "Paota Sanitary Mart",
+    "supplier_gstin": "08CENFU5283K1Z5",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "PA/678",
+    "invoice_date": "2026-07-24",
+    "taxable_value": "50646.00",
+    "cgst": "7090.44",
+    "sgst": "7090.44",
+    "igst": "0.00",
+    "total_gst": "14180.88",
+    "invoice_total": "64826.88",
+    "gst_rate": 28,
+    "description": "Tile Adhesive 20kg, GI Wire 12g (kg)",
+    "confidence": {
+      "supplier_gstin": 0.97,
+      "invoice_number": 0.97,
+      "invoice_date": 0.97,
+      "total_gst": 0.97,
+      "taxable_value": 0.97,
+      "invoice_total": 0.97
+    },
+    "boxes": {
+      "supplier_gstin": [
+        162,
+        360,
+        177,
+        629
+      ],
+      "invoice_number": [
+        212,
+        89,
+        227,
+        288
+      ],
+      "invoice_date": [
+        208,
+        734,
+        220,
+        901
+      ],
+      "total_gst": [
+        479,
+        789,
+        492,
+        905
+      ],
+      "invoice_total": [
+        504,
+        789,
+        517,
+        905
+      ]
+    }
+  },
+  "degradation": "jpeg",
+  "printed_tax_override": null
+}

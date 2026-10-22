@@ -1,0 +1,77 @@
+{
+  "truth": {
+    "is_bill": true,
+    "supplier_name": "Sardarpura Paints",
+    "supplier_gstin": "08CRRFU9608T1ZR",
+    "printed_gstin": "08CCRFU9608T1ZR",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "SAR/26-27/4176",
+    "invoice_date": "2026-07-27",
+    "taxable_value": "38912.00",
+    "cgst": "3502.08",
+    "sgst": "3502.08",
+    "igst": "0.00",
+    "total_gst": "7004.16",
+    "invoice_total": "45916.16",
+    "gst_rate": 18,
+    "description": "GI Wire 12g (kg), Cement OPC 53 Grade 50kg"
+  },
+  "fixture": {
+    "is_bill": true,
+    "supplier_name": "Sardarpura Paints",
+    "supplier_gstin": "08CCRFU9608T1ZR",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "SAR/26-27/4176",
+    "invoice_date": "2026-07-27",
+    "taxable_value": "38912.00",
+    "cgst": "3502.08",
+    "sgst": "3502.08",
+    "igst": "0.00",
+    "total_gst": "7004.16",
+    "invoice_total": "45916.16",
+    "gst_rate": 18,
+    "description": "GI Wire 12g (kg), Cement OPC 53 Grade 50kg",
+    "confidence": {
+      "supplier_gstin": 0.97,
+      "invoice_number": 0.97,
+      "invoice_date": 0.97,
+      "total_gst": 0.97,
+      "taxable_value": 0.97,
+      "invoice_total": 0.97
+    },
+    "boxes": {
+      "supplier_gstin": [
+        121,
+        332,
+        132,
+        620
+      ],
+      "invoice_number": [
+        154,
+        121,
+        166,
+        440
+      ],
+      "invoice_date": [
+        173,
+        122,
+        183,
+        302
+      ],
+      "total_gst": [
+        344,
+        740,
+        353,
+        847
+      ],
+      "invoice_total": [
+        361,
+        729,
+        370,
+        848
+      ]
+    }
+  },
+  "degradation": "clean",
+  "printed_tax_override": null
+}

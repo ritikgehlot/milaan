@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MILAAN · Agent Track Record</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 34 34'%3E%3Cpath d='M4 7c5 1 10 6 12 20C10 25 5 18 4 7z' fill='%234F46E5'/%3E%3Cpath d='M30 7c-5 1-10 6-12 20 6-2 11-9 12-20z' fill='%236366F1'/%3E%3C/svg%3E">
+<style>
+:root{
+  --bg:#F6F7FB; --panel:#FFFFFF; --ink:#111827; --ink2:#374151; --muted:#6B7280; --line:#E6E8F0; --line2:#EEF0F6;
+  --brand:#4F46E5; --brand-2:#6366F1; --brand-soft:#EEF0FF;
+  --green:#15803D; --green-bg:#E7F6EE; --red:#C62828; --red-bg:#FDECEC; --amber:#B45309; --amber-bg:#FEF3DC;
+  --blue:#1D4ED8; --blue-bg:#E3EBFF; --gray:#4B5563; --gray-bg:#EEF0F4; --teal:#0F766E; --teal-bg:#DDF4F1;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink);font-family:"Inter","Segoe UI",system-ui,-apple-system,"Noto Sans Devanagari",sans-serif;font-size:14px}
+button,input,select{font:inherit}
+.app{display:grid;grid-template-columns:240px 1fr;min-height:100vh}
+aside.side{background:var(--panel);border-right:1px solid var(--line);display:flex;flex-direction:column;padding:18px 14px;position:sticky;top:0;height:100vh}
+.logo{display:flex;align-items:center;gap:10px;padding:4px 8px 18px;border-bottom:1px solid var(--line2);margin-bottom:12px}
+.logo b{font-size:20px;letter-spacing:.5px;display:block;line-height:1}
+.logo small{font-size:10px;letter-spacing:1.2px;color:var(--muted);text-transform:uppercase}
+nav a{display:flex;align-items:center;gap:12px;padding:10px 12px;margin:2px 0;border-radius:10px;color:var(--ink2);text-decoration:none;cursor:pointer;position:relative}
+nav a:hover{background:#F3F4F8}
+nav a.on{background:var(--brand-soft);color:var(--brand);font-weight:600}
+nav a.on::before{content:"";position:absolute;left:-14px;top:6px;bottom:6px;width:4px;border-radius:0 4px 4px 0;background:var(--brand)}
+nav svg{width:20px;height:20px;flex:none}
+nav .count{margin-left:auto;font-size:11px;background:var(--red-bg);color:var(--red);padding:2px 7px;border-radius:999px;font-weight:600}
+.side-foot{margin-top:auto;border-top:1px solid var(--line2);padding:14px 8px 0;color:var(--muted);font-size:12px;line-height:1.5}
+.side-foot .wa{display:flex;align-items:center;gap:8px;color:var(--ink2);font-weight:600;font-size:13px;margin-bottom:4px}
+main{min-width:0}
+.top{height:64px;background:var(--panel);border-bottom:1px solid var(--line);display:flex;align-items:center;gap:16px;padding:0 28px;position:sticky;top:0;z-index:5}
+.search{flex:1;max-width:520px;display:flex;align-items:center;gap:8px;background:#F3F4F8;border-radius:10px;padding:9px 12px;color:var(--muted)}
+.search input{border:0;background:transparent;outline:none;flex:1;color:var(--ink)}
+.chip{display:flex;align-items:center;gap:10px;padding:6px 14px;border-left:1px solid var(--line)}
+.chip small{display:block;color:var(--muted);font-size:11px}
+.chip b{font-size:14px}
+.live{display:flex;align-items:center;gap:8px;color:var(--muted);font-size:12px}
+.dot{width:9px;height:9px;border-radius:50%;background:#22C55E;box-shadow:0 0 0 0 rgba(34,197,94,.6);animation:pulse 2s infinite}
+.dot.off{background:#9CA3AF;animation:none}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(34,197,94,.55)}70%{box-shadow:0 0 0 8px rgba(34,197,94,0)}100%{box-shadow:0 0 0 0 rgba(34,197,94,0)}}
+.avatar{width:36px;height:36px;border-radius:50%;background:var(--brand);color:#fff;display:grid;place-items:center;font-weight:700}
+.who{display:flex;align-items:center;gap:10px;padding-left:14px;border-left:1px solid var(--line)}
+.who b{display:block;font-size:13px}.who small{color:var(--muted);font-size:11px}
+.page{padding:26px 28px 40px;max-width:1500px}
+h1{font-size:28px;margin:0 0 4px;letter-spacing:-.3px}
+.sub{color:var(--muted);margin:0 0 20px}
+.head{display:flex;justify-content:space-between;align-items:flex-start;gap:20px;flex-wrap:wrap}
+.alert{display:flex;align-items:center;gap:14px;background:var(--brand-soft);border:1px solid #DADDFE;border-radius:14px;padding:12px 16px;max-width:620px}
+.alert b{color:var(--brand)}.alert small{display:block;color:var(--ink2);font-size:12px;margin-top:2px}
+.kpis{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px;margin:6px 0 18px}
+.kpi{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:16px 16px 14px;display:flex;gap:12px}
+.kpi .ic{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;flex:none}
+.kpi .ic svg{width:22px;height:22px}
+.kpi .lbl{font-size:13px;font-weight:600}
+.kpi .val{font-size:24px;font-weight:700;margin:3px 0 2px;letter-spacing:-.3px}
+.kpi .note{font-size:12px;color:var(--muted)}
+.t-brand{background:var(--brand-soft);color:var(--brand)} .t-green{background:var(--green-bg);color:var(--green)}
+.t-red{background:var(--red-bg);color:var(--red)} .t-amber{background:var(--amber-bg);color:var(--amber)}
+.t-blue{background:var(--blue-bg);color:var(--blue)} .t-gray{background:var(--gray-bg);color:var(--gray)} .t-teal{background:var(--teal-bg);color:var(--teal)}
+.grid3{display:grid;grid-template-columns:1.15fr 1fr .9fr;gap:14px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:18px}
+.card h3{margin:0 0 4px;font-size:16px}.card .cs{color:var(--muted);font-size:12px;margin:0 0 12px}
+.donut-wrap{display:flex;align-items:center;gap:20px}
+.legend{flex:1;display:flex;flex-direction:column;gap:7px}
+.legend div{display:flex;align-items:center;gap:8px;font-size:13px}
+.legend i{width:10px;height:10px;border-radius:50%;flex:none}
+.legend span{margin-left:auto;color:var(--ink2);font-variant-numeric:tabular-nums}
+.bars{display:flex;flex-direction:column;gap:10px}
+.bar{display:grid;grid-template-columns:130px 1fr 90px;align-items:center;gap:10px;font-size:13px}
+.bar .track{height:12px;background:#F0F1F7;border-radius:6px;overflow:hidden;display:flex}
+.bar .fill{height:100%}
+.bar .amt{text-align:right;font-variant-numeric:tabular-nums;font-weight:600}
+.bar .nm{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.steps{display:flex;flex-direction:column;gap:2px}
+.step{display:flex;gap:12px;padding:8px 8px;border-radius:12px;position:relative}
+.step .b{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;flex:none;font-size:12px;font-weight:700;border:2px solid #D1D5DB;color:#9CA3AF;background:#fff;z-index:1}
+.step.done .b{background:var(--brand);border-color:var(--brand);color:#fff}
+.step.active{background:var(--brand-soft)} .step.active .b{border-color:var(--brand);color:var(--brand)}
+.step:not(:last-child)::after{content:"";position:absolute;left:21px;top:36px;bottom:-10px;width:2px;background:#E5E7EB}
+.step.done:not(:last-child)::after{background:var(--brand)}
+.step b{display:block;font-size:14px}.step small{color:var(--muted);font-size:12px}
+.feed{display:flex;flex-direction:column}
+.feed div{display:grid;grid-template-columns:72px 1fr;gap:10px;padding:8px 0;border-bottom:1px solid var(--line2);font-size:13px}
+.feed div:last-child{border-bottom:0}
+.feed time{color:var(--muted);font-variant-numeric:tabular-nums;font-size:12px}
+.mt{margin-top:14px}
+.filters{display:flex;gap:12px;align-items:flex-end;flex-wrap:wrap;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:12px 14px;margin-bottom:14px}
+.filters label{display:flex;flex-direction:column;gap:5px;font-size:12px;color:var(--muted)}
+.filters select{min-width:170px;padding:8px 10px;border:1px solid var(--line);border-radius:9px;background:#fff;color:var(--ink)}
+.tbl{background:var(--panel);border:1px solid var(--line);border-radius:16px;overflow:auto}
+table{border-collapse:collapse;width:100%;min-width:900px}
+th{font-size:12px;text-align:left;color:var(--ink2);font-weight:600;background:#FAFBFD;padding:11px 12px;border-bottom:1px solid var(--line);white-space:nowrap}
+td{padding:11px 12px;border-bottom:1px solid var(--line2);white-space:nowrap;font-variant-numeric:tabular-nums}
+tr:last-child td{border-bottom:0}
+td.num,th.num{text-align:right}
+td.why{white-space:normal;min-width:240px;max-width:320px}
+.mono{font-family:ui-monospace,"Cascadia Mono",Consolas,monospace;font-size:12.5px}
+.badge{display:inline-block;padding:3px 9px;border-radius:7px;font-size:12px;font-weight:600}
+.empty{padding:40px;text-align:center;color:var(--muted)}
+.tfoot{display:flex;justify-content:space-between;color:var(--muted);font-size:13px;padding:12px 14px}
+.neg{color:var(--red)} .pos{color:var(--green)}
+.imports{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px;margin-bottom:14px}
+.imp{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px;display:flex;gap:12px}
+.imp b{display:block}.imp small{color:var(--muted)}
+.chat{display:flex;flex-direction:column;gap:10px;background:#EFEAE2;border-radius:16px;padding:18px;border:1px solid var(--line);max-height:72vh;overflow:auto}
+.msg{max-width:72%;padding:9px 12px;border-radius:12px;white-space:pre-wrap;line-height:1.4;font-size:13.5px;box-shadow:0 1px 0 rgba(0,0,0,.06)}
+.msg.in{align-self:flex-start;background:#fff;border-top-left-radius:4px}
+.msg.out{align-self:flex-end;background:#D9FDD3;border-top-right-radius:4px}
+.msg.sup{align-self:flex-start;background:#FFF4D6;border-top-left-radius:4px}
+.msg.supout{align-self:flex-end;background:#E3EBFF;border-top-right-radius:4px}
+.msg .meta{display:block;font-size:11px;color:var(--muted);margin-top:4px}
+.msg .tag{font-size:11px;font-weight:700;color:var(--muted);display:block;margin-bottom:3px}
+.kinds{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+.kinds button{border:1px solid var(--line);background:#fff;border-radius:999px;padding:5px 12px;cursor:pointer;font-size:12px}
+.kinds button.on{background:var(--brand);color:#fff;border-color:var(--brand)}
+.tr{background:var(--panel);border:1px solid var(--line);border-radius:12px;margin-bottom:6px}
+.tr summary{display:grid;grid-template-columns:150px 120px 1fr;gap:12px;padding:10px 14px;cursor:pointer;list-style:none;align-items:center}
+.tr summary::-webkit-details-marker{display:none}
+.tr pre{margin:0;padding:12px 14px;background:#0F172A;color:#E2E8F0;border-radius:0 0 12px 12px;overflow:auto;font-size:12px;max-height:340px}
+.note{font-size:12px;color:var(--muted);margin-top:10px}
+.hide{display:none!important}
+@media (max-width:1200px){.kpis{grid-template-columns:repeat(3,1fr)}.grid3{grid-template-columns:1fr 1fr}}
+@media (max-width:860px){.app{grid-template-columns:1fr}aside.side{position:static;height:auto;flex-direction:row;flex-wrap:wrap;gap:6px}.logo{border:0;margin:0;padding:4px}nav{display:flex;flex-wrap:wrap}.side-foot{display:none}.kpis,.grid3{grid-template-columns:1fr}.top{padding:0 14px}.chip,.who{display:none}.page{padding:18px 14px}}
+</style>
+</head>
+<body>
+<div class="app">
+<aside class="side">
+  <div class="logo">
+    <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><path d="M4 7c5 1 10 6 12 20C10 25 5 18 4 7z" fill="#4F46E5"/><path d="M30 7c-5 1-10 6-12 20 6-2 11-9 12-20z" fill="#6366F1" opacity=".75"/></svg>
+    <div><b>MILAAN</b><small>ITC Recovery Agent</small></div>
+  </div>
+  <nav id="nav">
+    <a data-v="dash"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg>Dashboard</a>
+    <a data-v="bills"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5M9 13h7M9 17h5"/></svg>Bills<span class="count hide" id="c-bills"></span></a>
+    <a data-v="twob"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 18a5 5 0 1 1 1-9.9A6 6 0 0 1 19 10a4 4 0 0 1-1 8z"/><path d="M12 11v7M9 14l3-3 3 3"/></svg>GSTR-2B</a>
+    <a data-v="recon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 16v-4M12 16V8M16 16v-6"/></svg>Reconciliation</a>
+    <a data-v="follow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.5a3.5 3.5 0 0 1 0 7M18 14a6 6 0 0 1 3.5 6"/></svg>Supplier follow-ups<span class="count hide" id="c-follow"></span></a>
+    <a data-v="chat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19l1.5-4A8 8 0 1 1 9 19.2z"/></svg>Conversation</a>
+    <a data-v="trace"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16M4 12h10M4 18h13"/><circle cx="18" cy="12" r="2"/></svg>Agent trace</a>
+  </nav>
+  <div class="side-foot">
+    <div class="wa"><span class="dot" id="side-dot"></span> Trader works on WhatsApp</div>
+    Read-only record of everything the agent read, decided, asked and sent. Synthetic demo data.
+  </div>
+</aside>
+<main>
+  <div class="top">
+    <div class="search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input id="q" placeholder="Search bill no., supplier, GSTIN…"></div>
+    <div class="live"><span class="dot" id="live-dot"></span><span id="updated">connecting…</span></div>
+    <div class="chip"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><div><small>Tax period</small><b id="period">—</b></div></div>
+    <div class="who"><div class="avatar" id="av">R</div><div><b id="tname">—</b><small id="tphone"></small></div></div>
+  </div>
+  <div class="page" id="page"><div class="empty">Loading…</div></div>
+</main>
+</div>
+<script>
+const T = new URLSearchParams(location.search).get("t");
+const API = "/api/dashboard" + (T ? "?t=" + encodeURIComponent(T) : "");
+let D = null, last = "", view = (location.hash || "#dash").slice(1), kindFilter = new Set(), openTrace = new Set();
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const inr = (v, d=0) => v == null ? "—" : "₹" + Number(v).toLocaleString("en-IN", {minimumFractionDigits:d, maximumFractionDigits:2});
+const dt = s => { if(!s) return "—"; const x = new Date(s.replace(" ","T")); return isNaN(x) ? s : x.toLocaleDateString("en-IN",{day:"2-digit",month:"short",year:"numeric"}); };
+const tm = s => { if(!s) return ""; const x = new Date(s.replace(" ","T")+"Z"); return isNaN(x) ? s.slice(11,16) : x.toLocaleTimeString("en-IN",{hour:"2-digit",minute:"2-digit"}); };
+const per = p => { if(!p) return "—"; const [y,m] = p.split("-"); return new Date(+y, +m-1, 1).toLocaleDateString("en-IN",{month:"short",year:"numeric"}); };
+const STATE_TONE = {MATCHED:"t-green",RECOVERED:"t-teal",PENDING_2B:"t-gray",NEEDS_INPUT:"t-amber",INVALID:"t-red",INELIGIBLE:"t-gray",
+  QRMP_WAIT:"t-blue",TO_CHASE:"t-red",CHASED:"t-brand",PROMISED:"t-blue",ESCALATED:"t-red",CHANNEL_BLOCKED:"t-red",SKIPPED:"t-gray"};
+const CAUSE_TONE = {MATCHED:"t-green",FORMAT_VARIANT:"t-green",ROUNDING:"t-green",AMOUNT_MISMATCH:"t-amber",ITC_NOT_AVAILABLE:"t-gray",
+  GSTIN_CONFLICT:"t-amber",UNKNOWN_GSTIN:"t-amber",INVALID_GSTIN:"t-red",QRMP_TIMING:"t-blue",NON_FILING:"t-red",GSTIN_AMEND:"t-amber",BILL_GSTIN_MISPRINT:"t-green"};
+const badge = (txt, tone) => txt ? `<span class="badge ${tone||"t-gray"}">${esc(txt)}</span>` : "";
+const sum = (a, f) => a.reduce((s, x) => s + (f(x) || 0), 0);
+const ofState = (st) => D.invoices.filter(i => st.includes(i.state));
+const ICON = {
+  rupee:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 5h10M7 9h10M7 5c6 0 6 8 0 8l7 7"/></svg>',
+  check:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>',
+  warn:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l10 18H2z"/><path d="M12 10v5M12 18v.5"/></svg>',
+  up:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 17l6-6 4 4 6-7"/><path d="M14 8h6v6"/></svg>',
+  ban:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M6 6l12 12"/></svg>',
+  doc:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5"/></svg>',
+  inbox:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 13l3-8h12l3 8v6H3z"/><path d="M3 13h5l1 3h6l1-3h5"/></svg>',
+};
+const kpi = (tone, icon, lbl, val, note) => `<div class="kpi"><div class="ic ${tone}">${ICON[icon]}</div><div><div class="lbl" style="color:inherit">${lbl}</div><div class="val">${val}</div><div class="note">${note}</div></div></div>`;
+const plural = (n, w) => `${n} ${w}${n === 1 ? "" : "s"}`;
+
+function table(cols, rows, emptyMsg) {
+  if (!rows.length) return `<div class="tbl"><div class="empty">${emptyMsg}</div></div>`;
+  return `<div class="tbl"><table><thead><tr>${cols.map(c => `<th class="${c.num?"num":""}">${c.h}</th>`).join("")}</tr></thead><tbody>${
+    rows.map(r => `<tr data-s="${esc(Object.values(r._s||{}).join(" ").toLowerCase())}">${cols.map(c => `<td class="${c.cls||""}${c.num?" num":""}">${c.f(r)}</td>`).join("")}</tr>`).join("")
+  }</tbody></table><div class="tfoot"><span>${rows.length} row${rows.length===1?"":"s"}</span><span>Live from the agent database</span></div></div>`;
+}
+const sKey = i => ({a:i.number, b:i.supplier, c:i.gstin, d:i.state_label, e:i.cause_label});
+
+function donut(parts) {
+  const total = sum(parts, p => p.n) || 1; let acc = 0; const R = 54, C = 2 * Math.PI * R;
+  const segs = parts.filter(p => p.n).map(p => { const len = p.n / total * C; const s = `<circle r="${R}" cx="70" cy="70" fill="none" stroke="${p.c}" stroke-width="22" stroke-dasharray="${len} ${C-len}" stroke-dashoffset="${-acc}" transform="rotate(-90 70 70)"/>`; acc += len; return s; }).join("");
+  return `<div class="donut-wrap"><svg width="140" height="140" viewBox="0 0 140 140" role="img" aria-label="Bills by status"><circle r="${R}" cx="70" cy="70" fill="none" stroke="#F0F1F7" stroke-width="22"/>${segs}<text x="70" y="68" text-anchor="middle" font-size="26" font-weight="700" fill="#111827">${sum(parts,p=>p.n)}</text><text x="70" y="88" text-anchor="middle" font-size="11" fill="#6B7280">bills</text></svg>
+  <div class="legend">${parts.map(p => `<div><i style="background:${p.c}"></i>${p.l}<span>${p.n} · ${inr(p.g)}</span></div>`).join("")}</div></div>`;
+}
+
+function feedText(t) {
+  let p = {}; try { p = JSON.parse(t.payload); } catch(e) {}
+  const n = t.name, k = t.kind;
+  if (k === "INBOUND") return `📥 ${n === "supplier" ? "Supplier replied" : "Trader sent"}${p.media && p.media.length ? " " + p.media.join(", ") : ""}${p.text ? ": “" + esc(p.text.slice(0,70)) + "”" : ""}`;
+  if (n.startsWith("extract_bill")) return `🧾 Read a bill photo ${n.includes("mock") ? "(fixture)" : "(vision model, 2 reads)"} → ${esc(p.status||"")}${p.uncertain && p.uncertain.length ? " · unsure: " + esc(p.uncertain.join(", ")) : ""}`;
+  if (n === "bill_recorded") return `📒 Bill #${p.invoice_id} recorded → ${esc(p.state)}${p.clause ? " · §" + esc(p.clause) : ""}`;
+  if (n === "targeted_reask") return `❓ Asked trader to confirm ${esc(p.field)}${p.crop_sent ? " (sent a crop)" : ""}`;
+  if (n.startsWith("diagnose:")) return `🧠 ${esc(p.invoice_number)}: ${esc(n.slice(9))} → ${esc(p.to)}`;
+  if (n === "parse_gstr2b") return `🗂️ Parsed GSTR-2B (${esc(p.format)}): ${p.accepted} rows${p.rejected ? ", " + p.rejected + " rejected" : ""}`;
+  if (n === "reconcile_and_diagnose") return `⚙️ Reconciled all bills against every 2B received`;
+  if (n === "drafts_ready_awaiting_consent") return `✋ Drafted ${plural((p.groups||[]).length, "supplier message")} — waiting for trader’s “haan”`;
+  if (n === "trader_approved") return `✅ Trader approved sending`;
+  if (n === "trader_declined") return `🛑 Trader declined — nothing sent`;
+  if (n === "pre_send_check") return `🛡️ Policy re-check ${p.problems && p.problems.length ? "BLOCKED: " + esc(p.problems.join(", ")) : "passed"} (${esc(p.gstin)})`;
+  if (n === "send_whatsapp_to_supplier") return `📤 WhatsApp to supplier ${esc(p.gstin)} → ${p.ok ? "sent" : "FAILED: " + esc(p.error)}`;
+  if (n === "interpret_supplier_reply") return `💬 Supplier intent: ${esc(p.intent)}${p.promised ? " by " + esc(p.promised) : ""}`;
+  if (n === "download_media") return `⬇️ Downloaded ${esc(p.mime || "media")} from WhatsApp`;
+  if (n === "apply_trader_correction") return `✍️ Applied trader’s correction to ${esc(p.field)}`;
+  if (n.startsWith("trader_answer")) return `👤 Trader answered “${esc(n.split(":")[1])}” for bill #${p.invoice_id}`;
+  if (n === "advance_clock") return `⏩ Demo clock advanced ${p.days} days`;
+  if (n === "speech_to_text") return `🎙️ Transcribed a voice note`;
+  if (n.startsWith("planner:")) return `🤖 Planner called ${esc(n.slice(8))}`;
+  if (k === "LLM") return `🤖 Planner step (${(p.tool_calls||[]).join(", ") || "answer"})`;
+  if (n === "escalate_to_trader") return `🚨 Escalated ${plural((p.invoice_ids||[]).length, "bill")} to the trader`;
+  if (n === "nudge_due") return `⏰ Reminder due for bill #${p.invoice_id}`;
+  if (k === "MESSAGE") return `${p.ok ? "💬" : "⚠️"} Message to ${n.endsWith("supplier") ? "supplier" : "trader"} ${p.ok ? "delivered to Twilio" : "failed: " + esc(p.error)}`;
+  if (k === "ERROR") return `⚠️ ${esc(n)}: ${esc((p.error||"").slice(0,80))}${p.queued_retry ? " — queued for retry" : ""}`;
+  if (k === "DEMO") return `⏩ Demo clock advanced ${p.days} days`;
+  return `${esc(k)} · ${esc(n)}`;
+}
+
+function vDash() {
+  const I = D.invoices;
+  const matched = ofState(["MATCHED"]), rec = ofState(["RECOVERED"]), inel = ofState(["INELIGIBLE"]);
+  const risk = ofState(["TO_CHASE","CHASED","PROMISED","CHANNEL_BLOCKED","ESCALATED"]);
+  const needs = ofState(["NEEDS_INPUT","INVALID"]), approve = ofState(["TO_CHASE"]);
+  const parts = [
+    {l:"Matched in 2B", c:"#10B981", s:["MATCHED"]}, {l:"Recovered", c:"#0F766E", s:["RECOVERED"]},
+    {l:"Being chased", c:"#EF4444", s:["TO_CHASE","CHASED","PROMISED","CHANNEL_BLOCKED"]},
+    {l:"Quarterly filer · wait", c:"#3B82F6", s:["QRMP_WAIT"]}, {l:"Needs your input", c:"#F59E0B", s:["NEEDS_INPUT","INVALID"]},
+    {l:"Waiting for 2B", c:"#A5B4FC", s:["PENDING_2B"]}, {l:"Not claimable", c:"#9CA3AF", s:["INELIGIBLE"]},
+    {l:"Escalated / skipped", c:"#7F1D1D", s:["ESCALATED","SKIPPED"]},
+  ].map(p => { const x = ofState(p.s); return {...p, n:x.length, g:sum(x, i => i.gst)}; }).filter(p => p.n);
+  const bySup = {}; I.forEach(i => { const k = i.supplier || i.gstin; bySup[k] = bySup[k] || {g:0, risk:0, ok:0}; bySup[k].g += i.gst;
+    if (["TO_CHASE","CHASED","PROMISED","CHANNEL_BLOCKED","ESCALATED"].includes(i.state)) bySup[k].risk += i.gst; else if (["MATCHED","RECOVERED"].includes(i.state)) bySup[k].ok += i.gst; });
+  const top = Object.entries(bySup).sort((a,b) => b[1].g - a[1].g).slice(0,7); const mx = Math.max(1, ...top.map(t => t[1].g));
+  const sentSup = D.outbound.filter(o => o.status === "SENT").length;
+  const steps = [
+    {t:"Bills received on WhatsApp", s: plural(I.length, "bill") + ` · ${I.filter(i=>!String(i.source).startsWith("seed")).length} sent live`, done: I.length > 0},
+    {t:"GSTR-2B imported", s: D.imports.length ? D.imports.map(i => per(i.periods)).join(", ") : "waiting for the CA’s file", done: D.imports.length > 0},
+    {t:"Reconciled & diagnosed", s: D.imports.length ? `${I.filter(i => i.cause).length} bills diagnosed` : "—", done: D.imports.length > 0 && I.some(i => i.cause)},
+    {t:"Supplier follow-ups", s: sentSup ? plural(sentSup, "message") + " sent with consent" : approve.length ? `${approve.length} waiting for “haan”` : "none needed yet", done: sentSup > 0},
+    {t:"Credit recovered", s: rec.length ? `${inr(sum(rec, i=>i.gst))} across ${plural(rec.length, "bill")}` : "after the next 2B", done: rec.length > 0},
+  ];
+  const active = steps.findIndex(s => !s.done);
+  const pend = needs.length + approve.length;
+  return `<div class="head"><div><h1>ITC recovery track record</h1><p class="sub">${esc(D.trader.name)} · what MILAAN read, decided, asked and sent — live from the agent.</p></div>
+  ${pend ? `<div class="alert"><span class="badge t-brand" style="font-size:18px;padding:6px 10px">!</span><div><b>${plural(pend, "bill")} waiting for the trader on WhatsApp</b><small>${needs.length ? needs.length + " need a confirmation" : ""}${needs.length && approve.length ? " · " : ""}${approve.length ? approve.length + " drafted, awaiting “haan”" : ""}. Nothing is sent without consent.</small></div></div>` : ""}</div>
+  <div class="kpis">
+    ${kpi("t-brand","rupee","GST on bills", inr(sum(I,i=>i.gst)), plural(I.length,"bill"))}
+    ${kpi("t-green","check","Safe in 2B", inr(sum(matched,i=>i.gst)), plural(matched.length,"bill") + " matched")}
+    ${kpi("t-red","warn","At risk", inr(sum(risk,i=>i.gst)), plural(risk.length,"bill") + " being chased")}
+    ${kpi("t-teal","up","Recovered", inr(sum(rec,i=>i.gst)), plural(rec.length,"bill") + " after follow-up")}
+    ${kpi("t-gray","ban","Not claimable", inr(sum(inel,i=>i.gst)), "§17(5) / 2B says no ITC")}
+  </div>
+  <div class="grid3">
+    <div class="card"><h3>Where every bill stands</h3><p class="cs">Each bill has exactly one state; colours are also labelled.</p>${parts.length ? donut(parts) : '<div class="empty">No bills yet</div>'}</div>
+    <div class="card"><h3>GST by supplier</h3><p class="cs"><span style="color:#10B981">■</span> safe &nbsp; <span style="color:#EF4444">■</span> at risk &nbsp; <span style="color:#C7D2FE">■</span> other</p>
+      <div class="bars">${top.map(([n,v]) => `<div class="bar"><span class="nm" title="${esc(n)}">${esc(n)}</span><div class="track" style="width:${Math.max(6, v.g/mx*100)}%"><div class="fill" style="width:${v.ok/v.g*100}%;background:#10B981"></div><div class="fill" style="width:${v.risk/v.g*100}%;background:#EF4444"></div><div class="fill" style="flex:1;background:#C7D2FE"></div></div><span class="amt">${inr(v.g)}</span></div>`).join("") || '<div class="empty">—</div>'}</div></div>
+    <div class="card"><h3>Agent workflow</h3><p class="cs">One trader, one tax period.</p><div class="steps">${steps.map((s,i) => `<div class="step ${s.done?"done":""} ${i===active?"active":""}"><div class="b">${s.done ? "✓" : i+1}</div><div><b>${s.t}</b><small>${s.s}</small></div></div>`).join("")}</div></div>
+  </div>
+  <div class="card mt"><h3>Live agent activity</h3><p class="cs">Latest steps from the trace — every tool call, decision, consent and message.</p>
+    <div class="feed">${D.trace.slice(0,12).map(t => `<div><time>${tm(t.at)}</time><span>${feedText(t)}</span></div>`).join("") || '<div class="empty">No activity yet</div>'}</div></div>`;
+}
+
+function vBills() {
+  const I = D.invoices;
+  const ok = I.filter(i => !["NEEDS_INPUT","INVALID"].includes(i.state) && i.eligibility === "ELIGIBLE");
+  const live = I.filter(i => !String(i.source).startsWith("seed"));
+  return `<h1>Bills</h1><p class="sub">Bill photos the trader sent on WhatsApp, read by the vision model and checked by deterministic rules.</p>
+  <div class="kpis" style="grid-template-columns:repeat(4,minmax(0,1fr))">
+    ${kpi("t-brand","doc","Bills recorded", I.length, plural(live.length, "sent live") + " in this session")}
+    ${kpi("t-green","check","Verified", ok.length, "GSTIN check digit + tax arithmetic")}
+    ${kpi("t-amber","warn","Need trader input", ofState(["NEEDS_INPUT","INVALID"]).length, "GSTIN never guessed")}
+    ${kpi("t-gray","ban","Not claimable", ofState(["INELIGIBLE"]).length, "§17(5) screen")}
+  </div>` + table([
+    {h:"Bill no.", f:i => `<b>${esc(i.number)}</b>`}, {h:"Date", f:i => dt(i.date)}, {h:"Supplier", f:i => esc(i.supplier)},
+    {h:"GSTIN", cls:"mono", f:i => esc(i.gstin)}, {h:"Taxable", num:1, f:i => inr(i.taxable)}, {h:"GST", num:1, f:i => inr(i.gst)},
+    {h:"Read from", f:i => String(i.source).startsWith("seed") ? badge("Pre-loaded", "t-gray") : badge(i.source.includes("trader") ? "Photo + trader" : "Photo", "t-brand")},
+    {h:"Status", f:i => badge(i.state_label, STATE_TONE[i.state])},
+  ], I.map(i => ({...i, _s: sKey(i)})), "No bills yet — send a bill photo on WhatsApp.");
+}
+
+function vTwob() {
+  const R = D.twob_rows;
+  const onBills = r => D.invoices.some(i => i.twob_number === r.number && (i.twob_gstin||"") === (r.gstin||""));
+  return `<h1>GSTR-2B</h1><p class="sub">Statements the trader (or his CA) forwarded on WhatsApp. Portal JSON and Excel/CSV are parsed; bad rows are kept aside, never coerced.</p>
+  <div class="imports">${D.imports.map(i => `<div class="imp"><div class="ic t-brand" style="width:40px;height:40px;border-radius:10px;display:grid;place-items:center">${ICON.inbox}</div><div><b>${per(i.periods)} · ${esc(i.format)}</b><small>${i.accepted} rows read${i.rejected ? ", " + i.rejected + " rejected" : ""} · ${dt(i.at)} ${tm(i.at)}</small><br><small class="mono">${esc(i.file)}</small></div></div>`).join("") || '<div class="card empty">No GSTR-2B yet — forward the file on WhatsApp.</div>'}</div>` +
+  table([
+    {h:"Invoice no.", f:r => `<b>${esc(r.number)}</b>`}, {h:"Date", f:r => dt(r.date)}, {h:"Supplier", f:r => esc(r.supplier || "")},
+    {h:"GSTIN", cls:"mono", f:r => esc(r.gstin)}, {h:"2B period", f:r => per(r.return_period)}, {h:"Taxable", num:1, f:r => inr(r.taxable)},
+    {h:"GST", num:1, f:r => inr(r.gst)}, {h:"ITC", f:r => r.itc_available ? badge("Available","t-green") : badge("Not available","t-gray")},
+    {h:"On a bill?", f:r => onBills(r) ? badge("Yes","t-green") : badge("No bill sent","t-gray")},
+  ], R.map(r => ({...r, _s:{a:r.number, b:r.supplier, c:r.gstin}})), "No 2B rows yet.");
+}
+
+function vRecon() {
+  const I = D.invoices;
+  return `<h1>Reconciliation</h1><p class="sub">Every bill against every GSTR-2B received so far — with the diagnosed cause and the action the agent took.</p>` +
+  table([
+    {h:"Bill no.", f:i => `<b>${esc(i.number)}</b>`}, {h:"Date", f:i => dt(i.date)}, {h:"Supplier", f:i => esc(i.supplier)},
+    {h:"GSTIN", cls:"mono", f:i => esc(i.gstin)}, {h:"GST · bill", num:1, f:i => inr(i.gst)},
+    {h:"GST · 2B", num:1, f:i => i.twob_gst == null ? "—" : inr(i.twob_gst) + (i.twob_number && i.twob_number !== i.number ? `<br><small class="mono" style="color:#6B7280">as ${esc(i.twob_number)}</small>` : "") + (i.twob_gstin && i.twob_gstin !== i.gstin ? `<br><small class="mono" style="color:#B45309">${esc(i.twob_gstin)}</small>` : "")},
+    {h:"Difference", num:1, f:i => { if (i.twob_gst == null) return i.cause ? `<span class="neg">${inr(-i.gst)}</span>` : "—"; const d = i.twob_gst - i.gst; return d === 0 ? "0" : `<span class="${d<0?"neg":"pos"}">${inr(d)}</span>`; }},
+    {h:"Diagnosis", cls:"why", f:i => (i.state === "RECOVERED" && i.chase_cause_label ? badge("Was: " + i.chase_cause_label, "t-teal")
+        : badge(i.cause_label || (i.state === "PENDING_2B" ? "Not checked yet" : i.state === "INELIGIBLE" ? "§17(5) blocked credit" : ""), CAUSE_TONE[i.cause] || "t-gray"))
+        + (i.reason ? `<div style="font-size:12px;color:#6B7280;margin-top:4px;max-width:300px">${esc(i.reason)}</div>` : "")},
+    {h:"Status", f:i => badge(i.state_label, STATE_TONE[i.state])},
+  ], I.map(i => ({...i, _s: sKey(i)})), "No bills yet.") + `<p class="note">Rules decide who may be contacted about money; the LLM never does. Differences: 2B minus bill.</p>`;
+}
+
+function vFollow() {
+  const F = D.followups;
+  return `<h1>Supplier follow-ups</h1><p class="sub">Suppliers MILAAN chased (or will chase) — every message needed the trader’s explicit “haan”.</p>` +
+  table([
+    {h:"Supplier", f:f => `<b>${esc(f.supplier)}</b>`}, {h:"GSTIN", cls:"mono", f:f => esc(f.gstin)}, {h:"WhatsApp", cls:"mono", f:f => esc(f.phone) || badge("No number","t-amber")},
+    {h:"Bills", num:1, f:f => f.bills}, {h:"Issue", f:f => f.issues.map(x => badge(x, x.includes("mismatch") || x.includes("GSTIN") ? "t-amber" : "t-red")).join(" ")},
+    {h:"GST", num:1, f:f => inr(f.gst)}, {h:"Reminders", num:1, f:f => f.chases}, {h:"Last follow-up", f:f => f.last ? dt(f.last) : "—"},
+    {h:"Next check", f:f => f.next ? dt(f.next) : "—"}, {h:"Status", f:f => badge(f.status_label, STATE_TONE[f.status])},
+  ], F.map(f => ({...f, _s:{a:f.supplier, b:f.gstin}})), "No supplier needed a follow-up yet.") +
+  `<div class="card mt"><h3>Outbound log</h3><p class="cs">Idempotent sends — one record per approved message.</p>` +
+  (D.outbound.length ? `<div class="tbl" style="border:0"><table style="min-width:600px"><thead><tr><th>#</th><th>To</th><th>Supplier GSTIN</th><th>Bills</th><th>Status</th><th class="num">Attempts</th><th>Sent</th></tr></thead><tbody>${D.outbound.map(o => `<tr><td>${o.id}</td><td class="mono">${esc(o.to)}</td><td class="mono">${esc(o.gstin)}</td><td>${o.invoices.length}</td><td>${badge(o.status, o.status==="SENT"?"t-green":"t-red")}${o.error ? ` <small>${esc(o.error)}</small>` : ""}</td><td class="num">${o.attempts}</td><td>${dt(o.at)} ${tm(o.at)}</td></tr>`).join("")}</tbody></table></div>` : '<div class="empty">Nothing sent yet.</div>') + `</div>`;
+}
+
+function vChat() {
+  const C = D.conversation;
+  return `<h1>Conversation</h1><p class="sub">The WhatsApp thread as the agent logged it (trader + test supplier). Phone numbers masked.</p>
+  <div class="chat" id="chatbox">${C.map(m => { const cls = m.who === "trader" ? (m.dir === "in" ? "in" : "out") : (m.dir === "in" ? "sup" : "supout");
+    const tag = m.who === "trader" ? (m.dir === "in" ? "Trader" : "MILAAN → trader") : (m.dir === "in" ? "Supplier " + m.phone : "MILAAN → supplier " + m.phone);
+    return `<div class="msg ${cls}"><span class="tag">${esc(tag)}</span>${m.body ? esc(m.body) : `<i>[${esc(m.media || "media")}]</i>`}<span class="meta">${tm(m.at)}</span></div>`; }).join("") || '<div class="empty">No messages yet.</div>'}</div>`;
+}
+
+function vTrace() {
+  const kinds = [...new Set(D.trace.map(t => t.kind))].sort();
+  const rows = D.trace.filter(t => !kindFilter.size || kindFilter.has(t.kind));
+  return `<h1>Agent trace</h1><p class="sub">Every tool call, decision, policy check, consent and message — newest first. Click a row for its evidence.</p>
+  <div class="kinds">${kinds.map(k => `<button data-k="${k}" class="${kindFilter.has(k)?"on":""}">${k}</button>`).join("")}</div>
+  ${rows.map(t => { let pretty = t.payload; try { pretty = JSON.stringify(JSON.parse(t.payload), null, 2); } catch(e) {}
+    return `<details class="tr" data-id="${t.id}" data-s="${esc((t.name + " " + t.payload).toLowerCase())}" ${openTrace.has(String(t.id)) ? "open" : ""}><summary><span class="mono" style="color:#6B7280">${dt(t.at)} ${tm(t.at)}</span><span>${badge(t.kind, {DECISION:"t-brand",POLICY:"t-amber",CONSENT:"t-green",ERROR:"t-red",TOOL_CALL:"t-blue",MESSAGE:"t-gray",INBOUND:"t-teal",LLM:"t-blue"}[t.kind])}</span><span>${feedText(t)}</span></summary><pre>${esc(pretty)}</pre></details>`; }).join("") || '<div class="card empty">No trace yet.</div>'}`;
+}
+
+const VIEWS = {dash:vDash, bills:vBills, twob:vTwob, recon:vRecon, follow:vFollow, chat:vChat, trace:vTrace};
+
+function render() {
+  if (!D) return;
+  if (D.empty) { $("#page").innerHTML = '<div class="card empty"><h3>No agent data yet</h3>Seed the demo (<span class="mono">python -m agent.demo.seed …</span>) or message the bot on WhatsApp.</div>'; return; }
+  $("#tname").textContent = D.trader.name; $("#tphone").textContent = D.trader.phone; $("#av").textContent = (D.trader.name || "R").trim()[0];
+  $("#period").textContent = D.periods.length ? D.periods.map(per).join(", ") : "—";
+  const needIn = ofState(["NEEDS_INPUT","INVALID"]).length, toApprove = ofState(["TO_CHASE"]).length;
+  const cb = $("#c-bills"), cf = $("#c-follow");
+  cb.textContent = needIn; cb.classList.toggle("hide", !needIn); cf.textContent = toApprove; cf.classList.toggle("hide", !toApprove);
+  document.querySelectorAll("#nav a").forEach(a => a.classList.toggle("on", a.dataset.v === view));
+  const chat = $("#chatbox"); const atBottom = !chat || chat.scrollHeight - chat.scrollTop - chat.clientHeight < 40;
+  $("#page").innerHTML = (VIEWS[view] || vDash)();
+  const c2 = $("#chatbox"); if (c2 && atBottom) c2.scrollTop = c2.scrollHeight;
+  applySearch();
+}
+function applySearch() {
+  const q = $("#q").value.trim().toLowerCase();
+  document.querySelectorAll("#page tr[data-s], #page details[data-s]").forEach(el => el.classList.toggle("hide", !!q && !el.dataset.s.includes(q)));
+}
+async function load() {
+  try {
+    const r = await fetch(API, {cache: "no-store"});
+    if (!r.ok) throw new Error(r.status);
+    const txt = await r.text();
+    $("#updated").textContent = "Live · " + new Date().toLocaleTimeString("en-IN", {hour:"2-digit", minute:"2-digit", second:"2-digit"});
+    $("#live-dot").classList.remove("off"); $("#side-dot").classList.remove("off");
+    if (txt !== last) { last = txt; D = JSON.parse(txt); render(); }
+  } catch (e) {
+    $("#updated").textContent = "Offline — retrying"; $("#live-dot").classList.add("off"); $("#side-dot").classList.add("off");
+  }
+}
+document.querySelector("#nav").addEventListener("click", e => { const a = e.target.closest("a[data-v]"); if (!a) return; view = a.dataset.v; history.replaceState(null, "", location.pathname + location.search + "#" + view); render(); window.scrollTo(0,0); });
+document.addEventListener("click", e => { const b = e.target.closest(".kinds button"); if (!b) return; const k = b.dataset.k; kindFilter.has(k) ? kindFilter.delete(k) : kindFilter.add(k); render(); });
+document.addEventListener("toggle", e => { const d = e.target; if (d.matches && d.matches("details.tr")) { d.open ? openTrace.add(d.dataset.id) : openTrace.delete(d.dataset.id); } }, true);
+$("#q").addEventListener("input", applySearch);
+window.addEventListener("hashchange", () => { const v = location.hash.slice(1); if (VIEWS[v] && v !== view) { view = v; render(); window.scrollTo(0,0); } });
+load(); setInterval(load, 3000);
+</script>
+</body>
+</html>

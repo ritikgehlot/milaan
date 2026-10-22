@@ -1,0 +1,89 @@
+{
+  "B0": {
+    "invoices": 800,
+    "action_accuracy": 0.755,
+    "chases": 0,
+    "chase_precision": null,
+    "chase_recall": 0.0,
+    "messages_to_innocent_suppliers": 0,
+    "misdirected_messages_wrong_gstin": 0,
+    "premature_chases_unconfirmed_gstin": 0,
+    "at_risk_gst_identified_pct": 0.0,
+    "per_cause_accuracy": {
+      "present": 1.0,
+      "format_variant": 1.0,
+      "rounding": 1.0,
+      "qrmp": 1.0,
+      "qrmp_thin": 1.0,
+      "non_filing": 0.0,
+      "amount_mismatch": 0.0,
+      "gstin_conflict": 0.0,
+      "misread_gstin": 0.0,
+      "itc_unavailable": 1.0
+    }
+  },
+  "B2": {
+    "invoices": 800,
+    "action_accuracy": 0.7662,
+    "chases": 341,
+    "chase_precision": 0.4516,
+    "chase_recall": 1.0,
+    "messages_to_innocent_suppliers": 145,
+    "misdirected_messages_wrong_gstin": 21,
+    "premature_chases_unconfirmed_gstin": 21,
+    "at_risk_gst_identified_pct": 100.0,
+    "per_cause_accuracy": {
+      "present": 1.0,
+      "format_variant": 0.132,
+      "rounding": 0.0,
+      "qrmp": 0.0,
+      "qrmp_thin": 0.0,
+      "non_filing": 1.0,
+      "amount_mismatch": 1.0,
+      "gstin_conflict": 0.0,
+      "misread_gstin": 0.0,
+      "itc_unavailable": 1.0
+    }
+  },
+  "MILAAN": {
+    "invoices": 800,
+    "action_accuracy": 0.9775,
+    "chases": 172,
+    "chase_precision": 0.8953,
+    "chase_recall": 1.0,
+    "messages_to_innocent_suppliers": 18,
+    "misdirected_messages_wrong_gstin": 0,
+    "premature_chases_unconfirmed_gstin": 0,
+    "at_risk_gst_identified_pct": 100.0,
+    "per_cause_accuracy": {
+      "present": 1.0,
+      "format_variant": 1.0,
+      "rounding": 1.0,
+      "qrmp": 1.0,
+      "qrmp_thin": 0.0,
+      "non_filing": 1.0,
+      "amount_mismatch": 1.0,
+      "gstin_conflict": 1.0,
+      "misread_gstin": 1.0,
+      "itc_unavailable": 1.0
+    }
+  },
+  "_meta": {
+    "traders": 20,
+    "invoices_per_trader": 40,
+    "seed": 23,
+    "cause_counts": {
+      "present": 433,
+      "gstin_conflict": 21,
+      "amount_mismatch": 40,
+      "non_filing": 114,
+      "misread_gstin": 21,
+      "format_variant": 68,
+      "itc_unavailable": 17,
+      "qrmp_thin": 18,
+      "rounding": 27,
+      "qrmp": 41
+    },
+    "caveat": "Synthetic, seeded by the same team that wrote the rules; not a blind test. qrmp_thin is a known hard case outside the rules."
+  }
+}

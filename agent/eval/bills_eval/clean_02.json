@@ -1,0 +1,77 @@
+{
+  "truth": {
+    "is_bill": true,
+    "supplier_name": "Ratanada Glass & Ply",
+    "supplier_gstin": "08USDFT9045N1ZZ",
+    "printed_gstin": "08USDFT9045N1ZZ",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "RAT/26-27/6534",
+    "invoice_date": "2026-09-28",
+    "taxable_value": "62910.00",
+    "cgst": "3774.60",
+    "sgst": "3774.60",
+    "igst": "0.00",
+    "total_gst": "7549.20",
+    "invoice_total": "70459.20",
+    "gst_rate": 12,
+    "description": "Cement OPC 53 Grade 50kg, Wall Putty 40kg"
+  },
+  "fixture": {
+    "is_bill": true,
+    "supplier_name": "Ratanada Glass & Ply",
+    "supplier_gstin": "08USDFT9045N1ZZ",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "RAT/26-27/6534",
+    "invoice_date": "2026-09-28",
+    "taxable_value": "62910.00",
+    "cgst": "3774.60",
+    "sgst": "3774.60",
+    "igst": "0.00",
+    "total_gst": "7549.20",
+    "invoice_total": "70459.20",
+    "gst_rate": 12,
+    "description": "Cement OPC 53 Grade 50kg, Wall Putty 40kg",
+    "confidence": {
+      "supplier_gstin": 0.97,
+      "invoice_number": 0.97,
+      "invoice_date": 0.97,
+      "total_gst": 0.97,
+      "taxable_value": 0.97,
+      "invoice_total": 0.97
+    },
+    "boxes": {
+      "supplier_gstin": [
+        164,
+        355,
+        183,
+        618
+      ],
+      "invoice_number": [
+        217,
+        91,
+        236,
+        377
+      ],
+      "invoice_date": [
+        205,
+        722,
+        220,
+        884
+      ],
+      "total_gst": [
+        473,
+        793,
+        488,
+        895
+      ],
+      "invoice_total": [
+        498,
+        782,
+        513,
+        896
+      ]
+    }
+  },
+  "degradation": "clean",
+  "printed_tax_override": null
+}

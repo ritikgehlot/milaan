@@ -1,0 +1,77 @@
+{
+  "truth": {
+    "is_bill": true,
+    "supplier_name": "Bhawani Steel Co",
+    "supplier_gstin": "08FEJPZ6843E1ZT",
+    "printed_gstin": "08FEJPZ6843E1ZT",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "INV-1565",
+    "invoice_date": "2026-10-06",
+    "taxable_value": "1176.00",
+    "cgst": "105.84",
+    "sgst": "105.84",
+    "igst": "0.00",
+    "total_gst": "211.68",
+    "invoice_total": "1387.68",
+    "gst_rate": 18,
+    "description": "GI Wire 12g (kg)"
+  },
+  "fixture": {
+    "is_bill": true,
+    "supplier_name": "Bhawani Steel Co",
+    "supplier_gstin": "08FEJPZ6843E1ZT",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "INV-1565",
+    "invoice_date": "2026-10-06",
+    "taxable_value": "1176.00",
+    "cgst": "105.84",
+    "sgst": "105.84",
+    "igst": "0.00",
+    "total_gst": "211.68",
+    "invoice_total": "1387.68",
+    "gst_rate": 18,
+    "description": "GI Wire 12g (kg)",
+    "confidence": {
+      "supplier_gstin": 0.97,
+      "invoice_number": 0.97,
+      "invoice_date": 0.97,
+      "total_gst": 0.97,
+      "taxable_value": 0.97,
+      "invoice_total": 0.97
+    },
+    "boxes": {
+      "supplier_gstin": [
+        164,
+        355,
+        182,
+        620
+      ],
+      "invoice_number": [
+        218,
+        91,
+        235,
+        309
+      ],
+      "invoice_date": [
+        206,
+        723,
+        220,
+        886
+      ],
+      "total_gst": [
+        451,
+        811,
+        462,
+        895
+      ],
+      "invoice_total": [
+        476,
+        794,
+        489,
+        896
+      ]
+    }
+  },
+  "degradation": "smudge_total",
+  "printed_tax_override": null
+}

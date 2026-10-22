@@ -1,0 +1,77 @@
+{
+  "truth": {
+    "is_bill": true,
+    "supplier_name": "Umaid Cement Depot",
+    "supplier_gstin": "08UYLFX7422U1Z4",
+    "printed_gstin": "08UYLFX7422U1Z4",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "UM/811",
+    "invoice_date": "2026-08-05",
+    "taxable_value": "12480.00",
+    "cgst": "1747.20",
+    "sgst": "1747.20",
+    "igst": "0.00",
+    "total_gst": "3494.40",
+    "invoice_total": "15974.40",
+    "gst_rate": 28,
+    "description": "Tile Adhesive 20kg"
+  },
+  "fixture": {
+    "is_bill": true,
+    "supplier_name": "Umaid Cement Depot",
+    "supplier_gstin": "08UYLFX7422U1Z4",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "UM/811",
+    "invoice_date": "2026-08-05",
+    "taxable_value": "12480.00",
+    "cgst": "1747.20",
+    "sgst": "1747.20",
+    "igst": "0.00",
+    "total_gst": "3494.40",
+    "invoice_total": "15974.40",
+    "gst_rate": 28,
+    "description": "Tile Adhesive 20kg",
+    "confidence": {
+      "supplier_gstin": 0.97,
+      "invoice_number": 0.97,
+      "invoice_date": 0.97,
+      "total_gst": 0.97,
+      "taxable_value": 0.97,
+      "invoice_total": 0.97
+    },
+    "boxes": {
+      "supplier_gstin": [
+        161,
+        361,
+        175,
+        632
+      ],
+      "invoice_number": [
+        211,
+        89,
+        225,
+        296
+      ],
+      "invoice_date": [
+        208,
+        737,
+        220,
+        904
+      ],
+      "total_gst": [
+        456,
+        802,
+        469,
+        907
+      ],
+      "invoice_total": [
+        482,
+        790,
+        494,
+        907
+      ]
+    }
+  },
+  "degradation": "smudge_gstin",
+  "printed_tax_override": null
+}

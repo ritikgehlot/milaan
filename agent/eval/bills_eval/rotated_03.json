@@ -1,0 +1,77 @@
+{
+  "truth": {
+    "is_bill": true,
+    "supplier_name": "Sardarpura Paints",
+    "supplier_gstin": "08PYFCV6013T1ZW",
+    "printed_gstin": "08PYFCV6013T1ZW",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "SA/982",
+    "invoice_date": "2026-10-13",
+    "taxable_value": "61735.00",
+    "cgst": "5556.15",
+    "sgst": "5556.15",
+    "igst": "0.00",
+    "total_gst": "11112.30",
+    "invoice_total": "72847.30",
+    "gst_rate": 18,
+    "description": "CPVC Pipe 1in 3m, Tile Adhesive 20kg"
+  },
+  "fixture": {
+    "is_bill": true,
+    "supplier_name": "Sardarpura Paints",
+    "supplier_gstin": "08PYFCV6013T1ZW",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "SA/982",
+    "invoice_date": "2026-10-13",
+    "taxable_value": "61735.00",
+    "cgst": "5556.15",
+    "sgst": "5556.15",
+    "igst": "0.00",
+    "total_gst": "11112.30",
+    "invoice_total": "72847.30",
+    "gst_rate": 18,
+    "description": "CPVC Pipe 1in 3m, Tile Adhesive 20kg",
+    "confidence": {
+      "supplier_gstin": 0.97,
+      "invoice_number": 0.97,
+      "invoice_date": 0.97,
+      "total_gst": 0.97,
+      "taxable_value": 0.97,
+      "invoice_total": 0.97
+    },
+    "boxes": {
+      "supplier_gstin": [
+        172,
+        340,
+        202,
+        587
+      ],
+      "invoice_number": [
+        240,
+        98,
+        266,
+        281
+      ],
+      "invoice_date": [
+        199,
+        686,
+        221,
+        838
+      ],
+      "total_gst": [
+        478,
+        764,
+        498,
+        871
+      ],
+      "invoice_total": [
+        503,
+        767,
+        521,
+        874
+      ]
+    }
+  },
+  "degradation": "rotated",
+  "printed_tax_override": null
+}

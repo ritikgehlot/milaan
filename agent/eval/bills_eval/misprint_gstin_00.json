@@ -1,0 +1,77 @@
+{
+  "truth": {
+    "is_bill": true,
+    "supplier_name": "Chopasni Pipe House",
+    "supplier_gstin": "08MNAFT8539J1ZN",
+    "printed_gstin": "08MNANT8539J1ZN",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "CHO/26-27/4705",
+    "invoice_date": "2026-09-16",
+    "taxable_value": "16489.00",
+    "cgst": "0.00",
+    "sgst": "0.00",
+    "igst": "2968.02",
+    "total_gst": "2968.02",
+    "invoice_total": "19457.02",
+    "gst_rate": 18,
+    "description": "SS Hinges 4in, PVC Ball Valve 1in"
+  },
+  "fixture": {
+    "is_bill": true,
+    "supplier_name": "Chopasni Pipe House",
+    "supplier_gstin": "08MNANT8539J1ZN",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "CHO/26-27/4705",
+    "invoice_date": "2026-09-16",
+    "taxable_value": "16489.00",
+    "cgst": "0.00",
+    "sgst": "0.00",
+    "igst": "2968.02",
+    "total_gst": "2968.02",
+    "invoice_total": "19457.02",
+    "gst_rate": 18,
+    "description": "SS Hinges 4in, PVC Ball Valve 1in",
+    "confidence": {
+      "supplier_gstin": 0.97,
+      "invoice_number": 0.97,
+      "invoice_date": 0.97,
+      "total_gst": 0.97,
+      "taxable_value": 0.97,
+      "invoice_total": 0.97
+    },
+    "boxes": {
+      "supplier_gstin": [
+        119,
+        344,
+        127,
+        645
+      ],
+      "invoice_number": [
+        150,
+        122,
+        159,
+        460
+      ],
+      "invoice_date": [
+        167,
+        122,
+        175,
+        310
+      ],
+      "total_gst": [
+        346,
+        760,
+        355,
+        871
+      ],
+      "invoice_total": [
+        363,
+        747,
+        371,
+        872
+      ]
+    }
+  },
+  "degradation": "clean",
+  "printed_tax_override": null
+}

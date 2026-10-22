@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="52" viewBox="0 0 220 52" fill="none">
+  <rect width="220" height="52" rx="10" fill="#102A24"/>
+  <g transform="translate(12 10)">
+    <path d="M16 27C8.3 23.5 5 17.8 6.7 10.3 14 10 20 14.7 21.3 22.2c.2 2-1.7 4-5.3 4.8Z" fill="#5F8B65"/>
+    <path d="M16.7 27c-.5-8.5 4.2-14.5 10.3-17.2 2.1 8.3-2.7 14.7-10.3 17.2Z" fill="#B7CBB1"/>
+  </g>
+  <text x="52" y="26" fill="#F1F7F3" font-family="Avenir Next, Segoe UI, system-ui, sans-serif" font-size="17" font-weight="700" letter-spacing="2.2">MILAAN</text>
+  <text x="53" y="39" fill="#9BB6AC" font-family="Avenir Next, Segoe UI, system-ui, sans-serif" font-size="8.5" font-weight="500" letter-spacing="1.2">ITC RECONCILIATION</text>
+</svg>

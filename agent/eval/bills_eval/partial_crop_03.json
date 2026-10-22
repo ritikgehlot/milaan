@@ -1,0 +1,77 @@
+{
+  "truth": {
+    "is_bill": true,
+    "supplier_name": "Sardarpura Paints",
+    "supplier_gstin": "08PZTPV3183D1ZD",
+    "printed_gstin": "08PZTPV3183D1ZD",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "SAR/26-27/1381",
+    "invoice_date": "2026-07-09",
+    "taxable_value": "8918.00",
+    "cgst": "0.00",
+    "sgst": "0.00",
+    "igst": "1070.16",
+    "total_gst": "1070.16",
+    "invoice_total": "9988.16",
+    "gst_rate": 12,
+    "description": "GI Wire 12g (kg)"
+  },
+  "fixture": {
+    "is_bill": true,
+    "supplier_name": "Sardarpura Paints",
+    "supplier_gstin": "08PZTPV3183D1ZD",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "SAR/26-27/1381",
+    "invoice_date": "2026-07-09",
+    "taxable_value": "8918.00",
+    "cgst": "0.00",
+    "sgst": "0.00",
+    "igst": "1070.16",
+    "total_gst": "1070.16",
+    "invoice_total": "9988.16",
+    "gst_rate": 12,
+    "description": "GI Wire 12g (kg)",
+    "confidence": {
+      "supplier_gstin": 0.97,
+      "invoice_number": 0.97,
+      "invoice_date": 0.97,
+      "total_gst": 0.97,
+      "taxable_value": 0.97,
+      "invoice_total": 0.97
+    },
+    "boxes": {
+      "supplier_gstin": [
+        109,
+        387,
+        124,
+        677
+      ],
+      "invoice_number": [
+        161,
+        96,
+        178,
+        412
+      ],
+      "invoice_date": [
+        157,
+        790,
+        171,
+        969
+      ],
+      "total_gst": [
+        394,
+        860,
+        408,
+        973
+      ],
+      "invoice_total": [
+        420,
+        861,
+        434,
+        973
+      ]
+    }
+  },
+  "degradation": "partial_crop",
+  "printed_tax_override": null
+}

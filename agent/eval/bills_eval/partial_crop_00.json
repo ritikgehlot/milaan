@@ -1,0 +1,77 @@
+{
+  "truth": {
+    "is_bill": true,
+    "supplier_name": "Suryanagri Hardware",
+    "supplier_gstin": "08LYPFD9104Y1ZM",
+    "printed_gstin": "08LYPFD9104Y1ZM",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "SUR/26-27/9007",
+    "invoice_date": "2026-08-14",
+    "taxable_value": "179980.00",
+    "cgst": "16198.20",
+    "sgst": "16198.20",
+    "igst": "0.00",
+    "total_gst": "32396.40",
+    "invoice_total": "212376.40",
+    "gst_rate": 18,
+    "description": "FR Wire 1.5sqmm 90m, Mortise Lock Set"
+  },
+  "fixture": {
+    "is_bill": true,
+    "supplier_name": "Suryanagri Hardware",
+    "supplier_gstin": "08LYPFD9104Y1ZM",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "SUR/26-27/9007",
+    "invoice_date": "2026-08-14",
+    "taxable_value": "179980.00",
+    "cgst": "16198.20",
+    "sgst": "16198.20",
+    "igst": "0.00",
+    "total_gst": "32396.40",
+    "invoice_total": "212376.40",
+    "gst_rate": 18,
+    "description": "FR Wire 1.5sqmm 90m, Mortise Lock Set",
+    "confidence": {
+      "supplier_gstin": 0.97,
+      "invoice_number": 0.97,
+      "invoice_date": 0.97,
+      "total_gst": 0.97,
+      "taxable_value": 0.97,
+      "invoice_total": 0.97
+    },
+    "boxes": {
+      "supplier_gstin": [
+        63,
+        378,
+        71,
+        703
+      ],
+      "invoice_number": [
+        96,
+        137,
+        104,
+        500
+      ],
+      "invoice_date": [
+        113,
+        136,
+        122,
+        340
+      ],
+      "total_gst": [
+        307,
+        809,
+        315,
+        946
+      ],
+      "invoice_total": [
+        325,
+        795,
+        333,
+        944
+      ]
+    }
+  },
+  "degradation": "partial_crop",
+  "printed_tax_override": null
+}

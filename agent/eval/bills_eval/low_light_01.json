@@ -1,0 +1,77 @@
+{
+  "truth": {
+    "is_bill": true,
+    "supplier_name": "Ratanada Glass & Ply",
+    "supplier_gstin": "08FDYCM4039X1ZP",
+    "printed_gstin": "08FDYCM4039X1ZP",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "INV-5320",
+    "invoice_date": "2026-07-17",
+    "taxable_value": "150240.00",
+    "cgst": "13521.60",
+    "sgst": "13521.60",
+    "igst": "0.00",
+    "total_gst": "27043.20",
+    "invoice_total": "177283.20",
+    "gst_rate": 18,
+    "description": "PVC Ball Valve 1in, FR Wire 1.5sqmm 90m"
+  },
+  "fixture": {
+    "is_bill": true,
+    "supplier_name": "Ratanada Glass & Ply",
+    "supplier_gstin": "08FDYCM4039X1ZP",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "INV-5320",
+    "invoice_date": "2026-07-17",
+    "taxable_value": "150240.00",
+    "cgst": "13521.60",
+    "sgst": "13521.60",
+    "igst": "0.00",
+    "total_gst": "27043.20",
+    "invoice_total": "177283.20",
+    "gst_rate": 18,
+    "description": "PVC Ball Valve 1in, FR Wire 1.5sqmm 90m",
+    "confidence": {
+      "supplier_gstin": 0.97,
+      "invoice_number": 0.97,
+      "invoice_date": 0.97,
+      "total_gst": 0.97,
+      "taxable_value": 0.97,
+      "invoice_total": 0.97
+    },
+    "boxes": {
+      "supplier_gstin": [
+        161,
+        362,
+        174,
+        634
+      ],
+      "invoice_number": [
+        209,
+        88,
+        222,
+        312
+      ],
+      "invoice_date": [
+        208,
+        739,
+        220,
+        907
+      ],
+      "total_gst": [
+        505,
+        791,
+        517,
+        908
+      ],
+      "invoice_total": [
+        531,
+        779,
+        542,
+        909
+      ]
+    }
+  },
+  "degradation": "low_light",
+  "printed_tax_override": null
+}

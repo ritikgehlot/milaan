@@ -1,0 +1,77 @@
+{
+  "truth": {
+    "is_bill": true,
+    "supplier_name": "Kailash Electricals",
+    "supplier_gstin": "08XAWPS7924M1ZW",
+    "printed_gstin": "08XAWPS7924M1ZW",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "KAI/26-27/3092",
+    "invoice_date": "2026-08-24",
+    "taxable_value": "55800.00",
+    "cgst": "0.00",
+    "sgst": "0.00",
+    "igst": "15624.00",
+    "total_gst": "15624.00",
+    "invoice_total": "71424.00",
+    "gst_rate": 28,
+    "description": "Tile Adhesive 20kg, FR Wire 1.5sqmm 90m"
+  },
+  "fixture": {
+    "is_bill": true,
+    "supplier_name": "Kailash Electricals",
+    "supplier_gstin": "08XAWPS7924M1ZW",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "KAI/26-27/3092",
+    "invoice_date": "2026-08-24",
+    "taxable_value": "55800.00",
+    "cgst": "0.00",
+    "sgst": "0.00",
+    "igst": "15624.00",
+    "total_gst": "15624.00",
+    "invoice_total": "71424.00",
+    "gst_rate": 28,
+    "description": "Tile Adhesive 20kg, FR Wire 1.5sqmm 90m",
+    "confidence": {
+      "supplier_gstin": 0.97,
+      "invoice_number": 0.97,
+      "invoice_date": 0.97,
+      "total_gst": 0.97,
+      "taxable_value": 0.97,
+      "invoice_total": 0.97
+    },
+    "boxes": {
+      "supplier_gstin": [
+        164,
+        356,
+        181,
+        621
+      ],
+      "invoice_number": [
+        216,
+        91,
+        235,
+        375
+      ],
+      "invoice_date": [
+        206,
+        724,
+        220,
+        888
+      ],
+      "total_gst": [
+        450,
+        782,
+        463,
+        896
+      ],
+      "invoice_total": [
+        475,
+        783,
+        489,
+        897
+      ]
+    }
+  },
+  "degradation": "jpeg",
+  "printed_tax_override": null
+}

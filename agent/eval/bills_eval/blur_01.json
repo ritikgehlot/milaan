@@ -1,0 +1,77 @@
+{
+  "truth": {
+    "is_bill": true,
+    "supplier_name": "Sardarpura Paints",
+    "supplier_gstin": "08HYZCU7539B1Z5",
+    "printed_gstin": "08HYZCU7539B1Z5",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "SAR/26-27/7518",
+    "invoice_date": "2026-08-21",
+    "taxable_value": "49040.00",
+    "cgst": "0.00",
+    "sgst": "0.00",
+    "igst": "8827.20",
+    "total_gst": "8827.20",
+    "invoice_total": "57867.20",
+    "gst_rate": 18,
+    "description": "GI Wire 12g (kg), CPVC Pipe 1in 3m"
+  },
+  "fixture": {
+    "is_bill": true,
+    "supplier_name": "Sardarpura Paints",
+    "supplier_gstin": "08HYZCU7539B1Z5",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "SAR/26-27/7518",
+    "invoice_date": "2026-08-21",
+    "taxable_value": "49040.00",
+    "cgst": "0.00",
+    "sgst": "0.00",
+    "igst": "8827.20",
+    "total_gst": "8827.20",
+    "invoice_total": "57867.20",
+    "gst_rate": 18,
+    "description": "GI Wire 12g (kg), CPVC Pipe 1in 3m",
+    "confidence": {
+      "supplier_gstin": 0.97,
+      "invoice_number": 0.97,
+      "invoice_date": 0.97,
+      "total_gst": 0.97,
+      "taxable_value": 0.97,
+      "invoice_total": 0.97
+    },
+    "boxes": {
+      "supplier_gstin": [
+        164,
+        380,
+        182,
+        645
+      ],
+      "invoice_number": [
+        205,
+        113,
+        224,
+        401
+      ],
+      "invoice_date": [
+        220,
+        744,
+        235,
+        908
+      ],
+      "total_gst": [
+        488,
+        795,
+        503,
+        897
+      ],
+      "invoice_total": [
+        513,
+        782,
+        527,
+        896
+      ]
+    }
+  },
+  "degradation": "blur",
+  "printed_tax_override": null
+}

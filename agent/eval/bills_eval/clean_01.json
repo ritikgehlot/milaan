@@ -1,0 +1,77 @@
+{
+  "truth": {
+    "is_bill": true,
+    "supplier_name": "Suryanagri Hardware",
+    "supplier_gstin": "08MNTPC6577C1ZD",
+    "printed_gstin": "08MNTPC6577C1ZD",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "INV-7508",
+    "invoice_date": "2026-09-10",
+    "taxable_value": "60630.00",
+    "cgst": "0.00",
+    "sgst": "0.00",
+    "igst": "7275.60",
+    "total_gst": "7275.60",
+    "invoice_total": "67905.60",
+    "gst_rate": 12,
+    "description": "Cement OPC 53 Grade 50kg, Mortise Lock Set"
+  },
+  "fixture": {
+    "is_bill": true,
+    "supplier_name": "Suryanagri Hardware",
+    "supplier_gstin": "08MNTPC6577C1ZD",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "INV-7508",
+    "invoice_date": "2026-09-10",
+    "taxable_value": "60630.00",
+    "cgst": "0.00",
+    "sgst": "0.00",
+    "igst": "7275.60",
+    "total_gst": "7275.60",
+    "invoice_total": "67905.60",
+    "gst_rate": 12,
+    "description": "Cement OPC 53 Grade 50kg, Mortise Lock Set",
+    "confidence": {
+      "supplier_gstin": 0.97,
+      "invoice_number": 0.97,
+      "invoice_date": 0.97,
+      "total_gst": 0.97,
+      "taxable_value": 0.97,
+      "invoice_total": 0.97
+    },
+    "boxes": {
+      "supplier_gstin": [
+        162,
+        359,
+        177,
+        629
+      ],
+      "invoice_number": [
+        212,
+        89,
+        227,
+        311
+      ],
+      "invoice_date": [
+        207,
+        734,
+        220,
+        900
+      ],
+      "total_gst": [
+        454,
+        800,
+        466,
+        904
+      ],
+      "invoice_total": [
+        479,
+        788,
+        492,
+        904
+      ]
+    }
+  },
+  "degradation": "clean",
+  "printed_tax_override": null
+}

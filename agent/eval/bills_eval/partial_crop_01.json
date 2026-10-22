@@ -1,0 +1,77 @@
+{
+  "truth": {
+    "is_bill": true,
+    "supplier_name": "Paota Sanitary Mart",
+    "supplier_gstin": "08WPSFL1192B1ZT",
+    "printed_gstin": "08WPSFL1192B1ZT",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "PAO/26-27/9486",
+    "invoice_date": "2026-08-21",
+    "taxable_value": "123230.00",
+    "cgst": "11090.70",
+    "sgst": "11090.70",
+    "igst": "0.00",
+    "total_gst": "22181.40",
+    "invoice_total": "145411.40",
+    "gst_rate": 18,
+    "description": "CPVC Pipe 1in 3m, Cement OPC 53 Grade 50kg"
+  },
+  "fixture": {
+    "is_bill": true,
+    "supplier_name": "Paota Sanitary Mart",
+    "supplier_gstin": "08WPSFL1192B1ZT",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "PAO/26-27/9486",
+    "invoice_date": "2026-08-21",
+    "taxable_value": "123230.00",
+    "cgst": "11090.70",
+    "sgst": "11090.70",
+    "igst": "0.00",
+    "total_gst": "22181.40",
+    "invoice_total": "145411.40",
+    "gst_rate": 18,
+    "description": "CPVC Pipe 1in 3m, Cement OPC 53 Grade 50kg",
+    "confidence": {
+      "supplier_gstin": 0.97,
+      "invoice_number": 0.97,
+      "invoice_date": 0.97,
+      "total_gst": 0.97,
+      "taxable_value": 0.97,
+      "invoice_total": 0.97
+    },
+    "boxes": {
+      "supplier_gstin": [
+        109,
+        387,
+        125,
+        677
+      ],
+      "invoice_number": [
+        162,
+        96,
+        179,
+        413
+      ],
+      "invoice_date": [
+        157,
+        789,
+        171,
+        968
+      ],
+      "total_gst": [
+        470,
+        849,
+        484,
+        974
+      ],
+      "invoice_total": [
+        498,
+        836,
+        511,
+        974
+      ]
+    }
+  },
+  "degradation": "partial_crop",
+  "printed_tax_override": null
+}

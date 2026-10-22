@@ -1,0 +1,77 @@
+{
+  "truth": {
+    "is_bill": true,
+    "supplier_name": "Umaid Cement Depot",
+    "supplier_gstin": "08HSBCY9333E1ZZ",
+    "printed_gstin": "08HSBCY9333E1ZZ",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "UMA/26-27/0187",
+    "invoice_date": "2026-10-23",
+    "taxable_value": "111720.00",
+    "cgst": "10054.80",
+    "sgst": "10054.80",
+    "igst": "0.00",
+    "total_gst": "20109.60",
+    "invoice_total": "131829.60",
+    "gst_rate": 18,
+    "description": "Wall Putty 40kg, Tile Adhesive 20kg"
+  },
+  "fixture": {
+    "is_bill": true,
+    "supplier_name": "Umaid Cement Depot",
+    "supplier_gstin": "08HSBCY9333E1ZZ",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "UMA/26-27/0187",
+    "invoice_date": "2026-10-23",
+    "taxable_value": "111720.00",
+    "cgst": "10054.80",
+    "sgst": "10054.80",
+    "igst": "0.00",
+    "total_gst": "20109.60",
+    "invoice_total": "131829.60",
+    "gst_rate": 18,
+    "description": "Wall Putty 40kg, Tile Adhesive 20kg",
+    "confidence": {
+      "supplier_gstin": 0.97,
+      "invoice_number": 0.97,
+      "invoice_date": 0.97,
+      "total_gst": 0.97,
+      "taxable_value": 0.97,
+      "invoice_total": 0.97
+    },
+    "boxes": {
+      "supplier_gstin": [
+        163,
+        357,
+        180,
+        623
+      ],
+      "invoice_number": [
+        214,
+        90,
+        232,
+        388
+      ],
+      "invoice_date": [
+        206,
+        727,
+        220,
+        892
+      ],
+      "total_gst": [
+        476,
+        785,
+        490,
+        900
+      ],
+      "invoice_total": [
+        501,
+        773,
+        515,
+        900
+      ]
+    }
+  },
+  "degradation": "noise",
+  "printed_tax_override": null
+}

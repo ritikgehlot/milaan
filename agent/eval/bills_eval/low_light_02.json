@@ -1,0 +1,77 @@
+{
+  "truth": {
+    "is_bill": true,
+    "supplier_name": "Kailash Electricals",
+    "supplier_gstin": "08ABDCA6077D1ZQ",
+    "printed_gstin": "08ABDCA6077D1ZQ",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "INV-7744",
+    "invoice_date": "2026-07-22",
+    "taxable_value": "36620.00",
+    "cgst": "5126.80",
+    "sgst": "5126.80",
+    "igst": "0.00",
+    "total_gst": "10253.60",
+    "invoice_total": "46873.60",
+    "gst_rate": 28,
+    "description": "CPVC Pipe 1in 3m, FR Wire 1.5sqmm 90m"
+  },
+  "fixture": {
+    "is_bill": true,
+    "supplier_name": "Kailash Electricals",
+    "supplier_gstin": "08ABDCA6077D1ZQ",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "INV-7744",
+    "invoice_date": "2026-07-22",
+    "taxable_value": "36620.00",
+    "cgst": "5126.80",
+    "sgst": "5126.80",
+    "igst": "0.00",
+    "total_gst": "10253.60",
+    "invoice_total": "46873.60",
+    "gst_rate": 28,
+    "description": "CPVC Pipe 1in 3m, FR Wire 1.5sqmm 90m",
+    "confidence": {
+      "supplier_gstin": 0.97,
+      "invoice_number": 0.97,
+      "invoice_date": 0.97,
+      "total_gst": 0.97,
+      "taxable_value": 0.97,
+      "invoice_total": 0.97
+    },
+    "boxes": {
+      "supplier_gstin": [
+        163,
+        358,
+        180,
+        625
+      ],
+      "invoice_number": [
+        215,
+        90,
+        230,
+        310
+      ],
+      "invoice_date": [
+        207,
+        729,
+        220,
+        894
+      ],
+      "total_gst": [
+        477,
+        786,
+        490,
+        901
+      ],
+      "invoice_total": [
+        502,
+        786,
+        515,
+        902
+      ]
+    }
+  },
+  "degradation": "low_light",
+  "printed_tax_override": null
+}

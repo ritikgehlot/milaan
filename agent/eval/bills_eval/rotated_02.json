@@ -1,0 +1,77 @@
+{
+  "truth": {
+    "is_bill": true,
+    "supplier_name": "Chopasni Pipe House",
+    "supplier_gstin": "08GHDPB9953J1ZW",
+    "printed_gstin": "08GHDPB9953J1ZW",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "CHO/26-27/1361",
+    "invoice_date": "2026-09-05",
+    "taxable_value": "10230.00",
+    "cgst": "920.70",
+    "sgst": "920.70",
+    "igst": "0.00",
+    "total_gst": "1841.40",
+    "invoice_total": "12071.40",
+    "gst_rate": 18,
+    "description": "SS Hinges 4in, CPVC Pipe 1in 3m"
+  },
+  "fixture": {
+    "is_bill": true,
+    "supplier_name": "Chopasni Pipe House",
+    "supplier_gstin": "08GHDPB9953J1ZW",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "CHO/26-27/1361",
+    "invoice_date": "2026-09-05",
+    "taxable_value": "10230.00",
+    "cgst": "920.70",
+    "sgst": "920.70",
+    "igst": "0.00",
+    "total_gst": "1841.40",
+    "invoice_total": "12071.40",
+    "gst_rate": 18,
+    "description": "SS Hinges 4in, CPVC Pipe 1in 3m",
+    "confidence": {
+      "supplier_gstin": 0.97,
+      "invoice_number": 0.97,
+      "invoice_date": 0.97,
+      "total_gst": 0.97,
+      "taxable_value": 0.97,
+      "invoice_total": 0.97
+    },
+    "boxes": {
+      "supplier_gstin": [
+        175,
+        423,
+        209,
+        664
+      ],
+      "invoice_number": [
+        196,
+        176,
+        233,
+        442
+      ],
+      "invoice_date": [
+        251,
+        749,
+        275,
+        898
+      ],
+      "total_gst": [
+        531,
+        764,
+        551,
+        858
+      ],
+      "invoice_total": [
+        554,
+        751,
+        574,
+        855
+      ]
+    }
+  },
+  "degradation": "rotated",
+  "printed_tax_override": null
+}

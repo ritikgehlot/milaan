@@ -1,0 +1,25 @@
+[
+  {
+    "correct": 8,
+    "of": 9,
+    "missing_bills": [],
+    "messages_to_innocent": [],
+    "premature_on_gstin_conflict": true,
+    "chase_recall": 1.0,
+    "actions": {
+      "MCA/1187": "NO_ACTION",
+      "SBP/26-27/0412": "NO_ACTION",
+      "TST/088": "NO_ACTION",
+      "MHM/2026/551": "CHASE",
+      "MHM/2026/583": "CHASE",
+      "JPS/0977": "CHASE",
+      "SRB-2291": "NO_ACTION",
+      "MCA/1214": "NO_ACTION",
+      "RE-3341": "CHASE"
+    },
+    "usage": {
+      "prompt_tokens": 12083,
+      "completion_tokens": 3910
+    }
+  }
+]

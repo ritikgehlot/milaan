@@ -1,0 +1,77 @@
+{
+  "truth": {
+    "is_bill": true,
+    "supplier_name": "Mehrangarh Building Supply",
+    "supplier_gstin": "08XMCPZ4074U1Z9",
+    "printed_gstin": "08XMCPZ4074U1Z9",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "MEH/26-27/4537",
+    "invoice_date": "2026-07-04",
+    "taxable_value": "19610.00",
+    "cgst": "1764.90",
+    "sgst": "1764.90",
+    "igst": "0.00",
+    "total_gst": "3529.80",
+    "invoice_total": "23139.80",
+    "gst_rate": 18,
+    "description": "PVC Ball Valve 1in"
+  },
+  "fixture": {
+    "is_bill": true,
+    "supplier_name": "Mehrangarh Building Supply",
+    "supplier_gstin": "08XMCPZ4074U1Z9",
+    "buyer_gstin": "08AAQFR4417L1ZN",
+    "invoice_number": "MEH/26-27/4537",
+    "invoice_date": "2026-07-04",
+    "taxable_value": "19610.00",
+    "cgst": "1764.90",
+    "sgst": "1764.90",
+    "igst": "0.00",
+    "total_gst": "3529.80",
+    "invoice_total": "23139.80",
+    "gst_rate": 18,
+    "description": "PVC Ball Valve 1in",
+    "confidence": {
+      "supplier_gstin": 0.97,
+      "invoice_number": 0.97,
+      "invoice_date": 0.97,
+      "total_gst": 0.97,
+      "taxable_value": 0.97,
+      "invoice_total": 0.97
+    },
+    "boxes": {
+      "supplier_gstin": [
+        109,
+        399,
+        125,
+        689
+      ],
+      "invoice_number": [
+        156,
+        107,
+        173,
+        428
+      ],
+      "invoice_date": [
+        164,
+        799,
+        178,
+        978
+      ],
+      "total_gst": [
+        428,
+        861,
+        442,
+        973
+      ],
+      "invoice_total": [
+        456,
+        848,
+        469,
+        972
+      ]
+    }
+  },
+  "degradation": "partial_crop",
+  "printed_tax_override": null
+}

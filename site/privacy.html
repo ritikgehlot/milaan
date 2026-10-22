@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Privacy Policy | MILAAN</title>
+  <meta name="description" content="Draft Privacy Policy for the MILAAN GST invoice reconciliation demo.">
+  <meta name="theme-color" content="#0d3b32">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="shell header-row">
+      <a class="brand" href="index.html" aria-label="MILAAN home">
+        <span class="brand-mark" aria-hidden="true">M</span>
+        <span class="brand-word">MILAAN</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+        <span class="nav-toggle-lines" aria-hidden="true">
+          <span></span>
+          <span></span>
+        </span>
+        <span class="sr-only">Open menu</span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <a href="index.html#product">Product</a>
+        <a href="index.html#how-it-works">How it works</a>
+        <a href="index.html#trust">Trust</a>
+        <a href="index.html#faq">FAQ</a>
+        <a class="btn btn-primary btn-nav" href="http://127.0.0.1:8501" target="_blank" rel="noopener" data-demo-link>Try the demo</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="legal-main" id="main">
+    <div class="shell legal-layout">
+      <aside class="legal-aside" aria-label="On this page">
+        <p>On this page</p>
+        <a href="#status">Draft status</a>
+        <a href="#site-data">Website data</a>
+        <a href="#demo-data">Demo data</a>
+        <a href="#storage">Storage</a>
+        <a href="#sharing">Sharing</a>
+        <a href="#retention">Retention</a>
+        <a href="#cookies">Cookies</a>
+        <a href="#rights">Your choices</a>
+        <a href="#contact">Contact</a>
+      </aside>
+
+      <div class="legal-content">
+        <p class="draft-badge">Draft for review</p>
+        <h1>Privacy Policy</h1>
+        <p class="legal-meta">Prepared 21 October 2026. This is a working draft, not legal advice. It requires review against the deployed configuration before publication.</p>
+
+        <div class="review-note">
+          <strong>Before publication</strong>
+          <p>The operator identity, contact details, hosting location, retention period, processor list and data-subject request process are not confirmed. Items marked as requiring confirmation must be completed. Do not use this draft as a final privacy notice.</p>
+        </div>
+
+        <section class="legal-section" id="status">
+          <h2>1. Scope and status</h2>
+          <p>This policy describes the current MILAAN website and local demonstration. MILAAN is an early-stage GST invoice reconciliation project. The operator responsible for the service is <span class="needs-review">[To be confirmed]</span>.</p>
+          <p>The demo is designed for synthetic records. It should not be used with real taxpayer, supplier or personal data until a production data-handling arrangement has been reviewed.</p>
+        </section>
+
+        <section class="legal-section" id="site-data">
+          <h2>2. Data processed by the website</h2>
+          <p>The static product website has no account system, contact form, payment flow, newsletter sign-up or marketing analytics in its own code. It does not ask for personal information.</p>
+          <p>The hosting provider and server used to deliver the website may process standard technical information such as IP address, request time, browser information and requested pages in access logs. The hosting configuration for a public deployment has not been verified.</p>
+        </section>
+
+        <section class="legal-section" id="demo-data">
+          <h2>3. Data processed by the demo</h2>
+          <p>The Streamlit demo can process the following categories when a user interacts with it:</p>
+          <ul>
+            <li>Supplier names, GSTINs and phone numbers in the synthetic demo database.</li>
+            <li>Purchase invoice fields, amounts, tax periods and validation results.</li>
+            <li>Uploaded GSTR-2B rows, file names, file hashes, raw source values and row-level errors.</li>
+            <li>Reconciliation runs, matched and unmatched evidence, and status classifications.</li>
+            <li>Follow-up draft text, draft status events and approval snapshots.</li>
+            <li>Mock delivery records and operator audit events.</li>
+          </ul>
+          <p>The application does not extract data from invoice photos or PDFs. It does not use a trained machine-learning model to classify invoices.</p>
+        </section>
+
+        <section class="legal-section" id="storage">
+          <h2>4. How data is stored</h2>
+          <p>Records are stored in a SQLite database on the machine running the demo. The database path is controlled by the deployment operator through the <code>DATABASE_PATH</code> environment variable.</p>
+          <p>The project does not claim application-level encryption at rest, independent security certification or regulatory compliance. Production access is expected to use OIDC sign-in when <code>APP_ENV=production</code>, but the static site does not configure or verify that deployment.</p>
+        </section>
+
+        <section class="legal-section" id="sharing">
+          <h2>5. Sharing and third parties</h2>
+          <p>The website code does not include advertising trackers, analytics SDKs, payment processors or a customer relationship management integration. The Streamlit runtime and the hosting provider may process technical data under their own terms; the final processor list has not been confirmed.</p>
+          <p>The application has a provider integration for the Meta WhatsApp Cloud API, but live WhatsApp delivery is disabled in the current app interface. The demo records mock delivery only. No live message is sent by the demo.</p>
+        </section>
+
+        <section class="legal-section" id="retention">
+          <h2>6. Retention and deletion</h2>
+          <p>No automatic retention or deletion schedule is implemented in the application. Demo records remain in the demo database until an operator resets or removes that database. A production retention period and deletion process are <span class="needs-review">[To be confirmed]</span>.</p>
+        </section>
+
+        <section class="legal-section" id="cookies">
+          <h2>7. Cookies and local storage</h2>
+          <p>The static website does not set marketing or advertising cookies. The Streamlit runtime may use cookies, session state, local storage or similar technology for application operation and sign-in. The exact behavior depends on the deployment and has not been independently audited for a public launch.</p>
+        </section>
+
+        <section class="legal-section" id="rights">
+          <h2>8. Your choices and rights</h2>
+          <p>Do not enter real business or personal data into the public demo. If a production service is launched, the operator must define how users can request access, correction or deletion, and which legal rights apply. The contact route and response process are <span class="needs-review">[To be confirmed]</span>.</p>
+        </section>
+
+        <section class="legal-section" id="contact">
+          <h2>9. Contact and changes</h2>
+          <p>Privacy questions and data requests should be sent to <span class="needs-review">[To be confirmed]</span>. The operator identity and address are <span class="needs-review">[To be confirmed]</span>. This draft may change when the deployment, retention policy and processor list are finalized.</p>
+        </section>
+
+        <a class="legal-back" href="index.html">Back to MILAAN</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="MILAAN home">
+            <span class="brand-mark" aria-hidden="true">M</span>
+            <span class="brand-word">MILAAN</span>
+          </a>
+          <p class="footer-tagline">Your invoices. One clearer picture.</p>
+          <p class="footer-copy">Compare purchase invoices with GSTR-2B data, identify discrepancies, and organize supplier follow-ups in one workflow.</p>
+        </div>
+
+        <div class="footer-links">
+          <div>
+            <h2>Product</h2>
+            <a href="index.html#product">Product</a>
+            <a href="index.html#how-it-works">How it works</a>
+            <a href="http://127.0.0.1:8501" target="_blank" rel="noopener" data-demo-link>Demo</a>
+          </div>
+          <div>
+            <h2>Legal</h2>
+            <a href="terms.html">Terms of Service</a>
+            <a href="privacy.html">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>No GST filing. No live WhatsApp delivery. Demo data is synthetic.</p>
+        <p>Draft site for review · 2026</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
